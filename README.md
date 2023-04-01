@@ -1,3 +1,9 @@
+Clonan el repositorio: git clone https://github.com/nodo-eafit-frontend/gamma-equipo-2
+
+Entran en la carpeta cd gamma-equipo-2
+
+Ejecutan el proyecto (instalen pnpm es más rápido que npm) pnpm next dev
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

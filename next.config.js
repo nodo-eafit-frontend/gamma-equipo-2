@@ -1,8 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
-}
+	reactStrictMode: true,
+	experimental: {
+		appDir: true,
+	},
+	images: {
+		dangerouslyAllowSVG: true,
+		//domains: ['agregar dominios'],
+	},
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
