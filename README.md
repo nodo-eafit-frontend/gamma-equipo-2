@@ -1,10 +1,24 @@
+## Leer el readme y los txt con explicaciones de ciertas carpetas/archivos
+
+Leer:
+
+- readme
+- txt en navbar-publico
+- txt en navbar-privado
+- txt en componentes
+- En api pueden ir los archivos .json para cada parte de la aplicacion (que es donde extraeremos la info, [base de datos dummy]) para no quemar los datos en el HTML
+- Para los estilos solo es crear el archivo scss, importarlo en style.scss e importar style.scss en x pagina/componente
+
 Clonan el repositorio: git clone https://github.com/nodo-eafit-frontend/gamma-equipo-2
 
-Entran en la carpeta cd gamma-equipo-2
+Entran en la carpeta: cd gamma-equipo-2
 
-Ejecutan el proyecto (instalen pnpm es más rápido que npm) pnpm next dev
+Ejecutan el proyecto (instalen pnpm es más rápido que npm): pnpm next dev
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Crean su rama (dependiendo de la funcionalidad que vayan a desarrollar): git checkout -b nombreRama
+
+...
+
 
 ## Getting Started
 

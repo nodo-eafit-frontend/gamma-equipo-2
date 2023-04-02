@@ -1,0 +1,1 @@
+aqui van los componentes, no se si lo vamos a hacer atom design o como pero aqui van esos componentes que pueden ser reutilizados en varias partes de la aplicación

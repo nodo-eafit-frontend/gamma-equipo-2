@@ -1,0 +1,1 @@
+Aqui van la página de donacion, el formulario, etc son las que tienen arriba un navbar o header con el logo de filantropia y una frase, con fondo azul
