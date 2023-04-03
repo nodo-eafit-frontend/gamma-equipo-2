@@ -1,7 +1,8 @@
 'use client';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { MdClose, MdMenu } from 'react-icons/md';
 
 const links = [
 	{
@@ -34,8 +35,14 @@ const links = [
 	},
 ];
 
-const Navbar = ({ className }) => {
+const Navbar = ({ exceptionStyle }) => {
 	const pathname = usePathname();
+
+	const [isOpen, setIsOpen] = useState(false);
+
+	const toggleNavbar = () => {
+		setIsOpen(!isOpen);
+	};
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -52,22 +59,31 @@ const Navbar = ({ className }) => {
 	}, []);
 
 	return (
-		<nav className={`navbar ${className}`}>
+		<nav className={`navbar ${exceptionStyle}`}>
 			<h3 className="navbar__title">
 				Filantropia <span className="navbar__eafit">eafit</span>
 			</h3>
-			<ul className="navbar__list">
-				{links.map(({ label, route }) => (
-					<li className="navbar__item" key={route}>
-						<Link
-							href={route}
-							className={`navbar__link${pathname == route ? '--active' : ''}`}
-						>
-							{label}
-						</Link>
-					</li>
-				))}
-			</ul>
+			<div class="navbar__nav-container">
+				<button className="navbar__toggler" onClick={() => toggleNavbar()}>
+					{isOpen ? <MdClose /> : <MdMenu />}
+				</button>
+				<div className={`navbar__list-container ${isOpen ? 'show' : ''}`}>
+					<ul className="navbar__list">
+						{links.map(({ label, route }) => (
+							<li className="navbar__item" key={route}>
+								<Link
+									href={route}
+									className={`navbar__link${
+										pathname == route ? '--active' : ''
+									}`}
+								>
+									{label}
+								</Link>
+							</li>
+						))}
+					</ul>
+				</div>
+			</div>
 		</nav>
 	);
 };

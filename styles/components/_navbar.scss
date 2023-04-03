@@ -1,5 +1,6 @@
 .navbar {
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
@@ -9,17 +10,9 @@
 	padding: 15px 0;
 	position: sticky;
 	top: 0;
-
 	width: 100%;
 	transition: background-color 0.5s ease;
 	font-weight: 700;
-
-	& .navbar__link {
-		&:hover {
-			//text-decoration: underline;
-			border-bottom: 2px solid $color-light;
-		}
-	}
 
 	&__title {
 		width: 100%;
@@ -31,27 +24,43 @@
 		text-transform: uppercase;
 	}
 
+	&__nav-container {
+		padding: 15px 0;
+	}
+
+	&__toggler {
+		display: block;
+		margin: auto;
+		font-size: $font-size-m;
+	}
+
+	&__list-container {
+		display: none;
+	}
+
+	&__list-container.show {
+		display: block;
+	}
+
 	&__list {
 		display: flex;
-		flex-wrap: wrap;
-		gap: 20px;
-		justify-content: center;
+		flex-direction: column;
 		align-items: center;
-		font-weight: 400;
-		padding: 10px;
+	}
+
+	&__item {
+		margin-bottom: 1rem;
+		margin-right: 0;
 	}
 
 	&__link {
-		//text-decoration-skip-ink: auto;
 		border-bottom: 2px solid transparent;
 		transition: all 0.3s ease-in-out;
 		&:hover {
-			//text-decoration: underline;
 			border-bottom: 2px solid $color-dark;
 		}
 
 		&--active {
-			//text-decoration: underline;
 			color: $color-primary;
 			border-bottom: 2px solid $color-primary;
 			transform: scale(1.2);
@@ -62,4 +71,37 @@
 .--scrolled {
 	background-color: $color-dark;
 	color: $color-light;
+
+	.navbar__link {
+		&:hover {
+			border-bottom: 2px solid $color-light;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar {
+		display: flex;
+		flex-direction: row;
+
+		&__toggler {
+			display: none;
+		}
+
+		&__list-container {
+			display: block;
+		}
+
+		&__list {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 20px;
+			justify-content: center;
+			align-items: center;
+			font-weight: 400;
+			padding: 10px;
+		}
+	}
 }

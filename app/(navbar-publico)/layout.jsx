@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar';
 const layoutPublico = ({ children }) => {
 	return (
 		<div className="layout-publico">
-			<Navbar className={'exception'} />
+			<Navbar exceptionStyle={'exception'} />
 			{children}
 		</div>
 	);
