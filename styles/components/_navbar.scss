@@ -1,0 +1,42 @@
+.navbar {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	background-color: $color-dark;
+	color: $color-light;
+	font-size: $font-size-sr;
+	padding: 15px 0;
+
+	&__title {
+		font-size: $font-size-m;
+	}
+
+	&__eafit {
+		text-transform: uppercase;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__link {
+		//text-decoration-skip-ink: auto;
+		border-bottom: 2px solid transparent;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			//text-decoration: underline;
+			border-bottom: 2px solid $color-light;
+		}
+
+		&--active {
+			//text-decoration: underline;
+			color: $color-primary;
+			border-bottom: 2px solid $color-primary;
+		}
+	}
+}
