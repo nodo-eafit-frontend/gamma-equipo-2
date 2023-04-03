@@ -41,9 +41,9 @@ const Navbar = ({ className }) => {
 		const handleScroll = () => {
 			const navbar = document.querySelector('.navbar');
 			if (navbar && window.scrollY > 0) {
-				navbar.classList.add('navbar--scrolled');
+				navbar.classList.add('--scrolled');
 			} else {
-				navbar.classList.remove('navbar--scrolled');
+				navbar.classList.remove('--scrolled');
 			}
 		};
 
