@@ -13,12 +13,12 @@ Clonan el repositorio: git clone https://github.com/nodo-eafit-frontend/gamma-eq
 
 Entran en la carpeta: cd gamma-equipo-2
 
-Ejecutan el proyecto (instalen pnpm es más rápido que npm): pnpm next dev
+Ejecutan el proyecto (instalen pnpm es más rápido que npm y para tener un estandar): pnpm next dev
 
 Crean su rama (dependiendo de la funcionalidad que vayan a desarrollar): git checkout -b nombreRama
 
+Ya cuando se necesite se hace el merge a main
 ...
-
 
 ## Getting Started
 

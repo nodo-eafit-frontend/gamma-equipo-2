@@ -8,10 +8,30 @@ const links = [
 		label: 'Inicio',
 		route: '/',
 	},
-	/* {
+	{
 		label: 'Causas',
 		route: '/causas',
-	}, */
+	},
+	{
+		label: 'Donar',
+		route: '/donar',
+	},
+	{
+		label: 'Cómo donar',
+		route: '/como-donar',
+	},
+	{
+		label: 'Iniciativas',
+		route: '/iniciativas',
+	},
+	{
+		label: 'Informes de gestión',
+		route: '/informes-de-gestion',
+	},
+	{
+		label: 'Noticias',
+		route: '/noticias',
+	},
 ];
 
 const Navbar = ({ className }) => {
@@ -20,7 +40,7 @@ const Navbar = ({ className }) => {
 	useEffect(() => {
 		const handleScroll = () => {
 			const navbar = document.querySelector('.navbar');
-			if (navbar && window.pageYOffset > 0) {
+			if (navbar && window.scrollY > 0) {
 				navbar.classList.add('navbar--scrolled');
 			} else {
 				navbar.classList.remove('navbar--scrolled');

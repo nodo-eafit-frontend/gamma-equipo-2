@@ -17,6 +17,13 @@
 	&--scrolled {
 		background-color: $color-dark;
 		color: $color-light;
+
+		& .navbar__link {
+			&:hover {
+				//text-decoration: underline;
+				border-bottom: 2px solid $color-light;
+			}
+		}
 	}
 
 	&__title {
@@ -32,10 +39,11 @@
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 10px;
+		gap: 20px;
 		justify-content: center;
 		align-items: center;
-		font-weight: 200;
+		font-weight: 300;
+		padding: 10px;
 	}
 
 	&__link {
@@ -44,13 +52,14 @@
 		transition: all 0.3s ease-in-out;
 		&:hover {
 			//text-decoration: underline;
-			border-bottom: 2px solid $color-light;
+			border-bottom: 2px solid $color-dark;
 		}
 
 		&--active {
 			//text-decoration: underline;
 			color: $color-primary;
 			border-bottom: 2px solid $color-primary;
+			transform: scale(1.2);
 		}
 	}
 }
