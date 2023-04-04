@@ -16,7 +16,7 @@
 	z-index: 1000;
 
 	&__title {
-		width: 100%;
+		width: 80%;
 		text-align: center;
 		font-size: $font-size-s;
 	}
@@ -73,9 +73,16 @@
 	background-color: $color-dark;
 	color: $color-light;
 
-	.navbar__link {
-		&:hover {
-			border-bottom: 2px solid $color-light;
+	.navbar {
+		&__link {
+			&:hover {
+				border-bottom: 2px solid $color-light;
+			}
+		}
+
+		&__title {
+			color: $color-primary !important;
+			transform: scale(1.2);
 		}
 	}
 }
