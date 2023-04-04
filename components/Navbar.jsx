@@ -63,7 +63,7 @@ const Navbar = ({ exceptionStyle }) => {
 			<h3 className="navbar__title">
 				Filantropia <span className="navbar__eafit">eafit</span>
 			</h3>
-			<div class="navbar__nav-container">
+			<div className="navbar__nav-container">
 				<button className="navbar__toggler" onClick={() => toggleNavbar()}>
 					{isOpen ? <MdClose /> : <MdMenu />}
 				</button>

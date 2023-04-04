@@ -1,15 +1,14 @@
-import React from 'react';
-import NavbarPrivado from '../../components/NavbarPrivado';
-import FooterPrivado from '../../components/FooterPrivado';
+import NavbarMicrositio from '../../components/NavbarMicrositio';
+import FooterMicrositio from '../../components/FooterMicrositio';
 
-const layoutPrivado = ({ children }) => {
+const layoutMicrositio = ({ children }) => {
 	return (
 		<div>
-			<NavbarPrivado />
+			<NavbarMicrositio />
 			{children}
-			<FooterPrivado />
+			<FooterMicrositio />
 		</div>
 	);
 };
 
-export default layoutPrivado;
+export default layoutMicrositio;

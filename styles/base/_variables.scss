@@ -5,12 +5,14 @@ $color-dark: rgb(24, 24, 35);
 $color-light: #e9f8f9;
 
 //tamaño fuente
+//smallest (st) - extra small (xs) - smaller (sr) - small (s) - medium (m) - large (l) - larger (lr) - extra large (xl) - largest (ls)
+//el más pequeño - extra pequeño - muy pqueño - medio - grande - muy largo - extra largo - el más largo
 $font-size-st: 0.7rem;
 $font-size-xs: 1rem;
-$font-size-sr: 1.3rem;
+$font-size-sr: 1.2rem;
 $font-size-s: 1.5rem;
-$font-size-m: 2.5rem;
-$font-size-l: 3.5rem;
-$font-size-lr: 5rem;
-$font-size-xl: 7rem;
-$font-size-lt: 10rem;
+$font-size-m: 1.8rem;
+$font-size-l: 2rem;
+$font-size-lr: 2.5rem;
+$font-size-xl: 3rem;
+$font-size-lt: 4rem;
