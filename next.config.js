@@ -6,7 +6,14 @@ const nextConfig = {
 	},
 	images: {
 		dangerouslyAllowSVG: true,
-		//domains: ['agregar dominios'],
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'servicios.eafit.edu.co',
+				port: '',
+				pathname: '/cs/FLDONCS/cache/EA_HEADER_MICRO_ESP_1.png',
+			},
+		],
 	},
 };
 
