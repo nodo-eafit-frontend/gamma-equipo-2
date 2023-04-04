@@ -1,14 +1,9 @@
-import Image from 'next/image';
+import HeaderHome from '@/components/paginaInicial/header';
 
 export default function Home() {
 	return (
 		<>
-			<header>
-				<Image src="" alt="" />
-				<h1>
-					Filantropia <span>eafit</span>
-				</h1>
-			</header>
+			<HeaderHome />
 			<main>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ab

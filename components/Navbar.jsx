@@ -14,10 +14,6 @@ const links = [
 		route: '/causas',
 	},
 	{
-		label: 'Donar',
-		route: '/donar',
-	},
-	{
 		label: 'Cómo donar',
 		route: '/como-donar',
 	},

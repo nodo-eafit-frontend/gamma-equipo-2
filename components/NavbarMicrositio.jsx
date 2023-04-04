@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import imgNavbar from '../assets/navbar-micrositio/EA_HEADER_MICRO_ESP_1.png';
+//import imgNavbar from '../assets/navbar-micrositio/EA_HEADER_MICRO_ESP_1.png';
 import imagen_navbar from '../assets/navbar-micrositio/imagen_navbar.svg';
 import { Poppins, Montserrat, Ephesis } from 'next/font/google';
 
