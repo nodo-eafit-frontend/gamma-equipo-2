@@ -2,12 +2,13 @@
 @import './base/variables';
 @import './base/reset';
 
-//components
-@import './components/navbar';
-@import './components/button';
+//layouts
+@import './layouts/layoutPublico';
 
 //pages
 @import './pages/inicial';
 
-//layouts
-@import './layouts/layoutPublico';
+//components
+@import './components/navbar';
+@import './components/button';
+@import './components/navbar-micrositio';

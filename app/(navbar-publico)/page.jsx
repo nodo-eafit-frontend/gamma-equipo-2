@@ -1,7 +1,14 @@
+import Image from 'next/image';
+
 export default function Home() {
 	return (
 		<>
-			<header></header>
+			<header>
+				<Image src="" alt="" />
+				<h1>
+					Filantropia <span>eafit</span>
+				</h1>
+			</header>
 			<main>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ab
