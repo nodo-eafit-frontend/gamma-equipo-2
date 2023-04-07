@@ -1,8 +1,22 @@
 import React from 'react';
 import Link from 'next/link';
 
-const ButtonDefault = () => {
-	return <div>botonDefault</div>;
+const Button = ({
+	name,
+	href,
+	width,
+	heigth,
+	borderRadius,
+	color,
+	colorHover,
+	bgColor,
+	bgColorHover,
+}) => {
+	return (
+		<button>
+			<Link href={href}>{name}</Link>
+		</button>
+	);
 };
 
 export const ButtonDonar = () => {
@@ -15,4 +29,4 @@ export const ButtonDonar = () => {
 	);
 };
 
-export default ButtonDefault;
+export default Button;
