@@ -1,6 +1,5 @@
 import '../styles/style.scss';
 
-
 import { Poppins, Montserrat } from 'next/font/google';
 
 const poppins = Poppins({

@@ -32,7 +32,6 @@
 		text-align: center;
 		padding: 10px 0;
 		font-weight: 500;
-		//background-color: rgba($color: $dark-color, $alpha: 0.3);
 		border-radius: 0 0 10px 10px;
 	}
 
@@ -82,6 +81,7 @@
 
 		&__containerText {
 			max-width: 400px;
+			padding-top: 0;
 		}
 	}
 }
