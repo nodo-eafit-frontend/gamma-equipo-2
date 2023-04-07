@@ -6,9 +6,8 @@ Leer:
 - txt en navbar-publico
 - txt en navbar-privado
 - txt en componentes
-- En api pueden ir los archivos .json para cada parte de la aplicacion (que es donde extraeremos la info, [base de datos dummy]) para no quemar los datos en el HTML
-- Para los estilos solo es crear el archivo scss, importarlo en style.scss e importar style.scss en x pagina/componente
-
+- En data pueden ir los archivos .json para cada parte de la aplicacion (que es donde extraeremos la info, [base de datos dummy]) para no quemar los datos en el HTML
+- Para los estilos solo es crear el archivo scss, importarlo en style.scss e importar style.scss
 Clonan el repositorio: git clone https://github.com/nodo-eafit-frontend/gamma-equipo-2
 
 Entran en la carpeta: cd gamma-equipo-2

@@ -13,6 +13,10 @@ const nextConfig = {
 				port: '',
 				pathname: '/cs/FLDONCS/cache/EA_HEADER_MICRO_ESP_1.png',
 			},
+			{
+				protocol: 'https',
+				hostname: '**.example.com',
+			},
 		],
 	},
 };
