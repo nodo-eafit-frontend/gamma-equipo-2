@@ -5,7 +5,6 @@ import { useKeenSlider } from 'keen-slider/react';
 import infoCausas from '../../data/infoCarouselCausas';
 import Image from 'next/image';
 import { CarouselCard } from './Card';
-//import Carousel from 'react-bootstrap/Carousel';
 import Button from './Button';
 import Link from 'next/link';
 

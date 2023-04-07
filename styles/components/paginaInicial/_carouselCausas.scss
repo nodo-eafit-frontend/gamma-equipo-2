@@ -67,6 +67,13 @@
 
 @media (min-width: 1024px) {
 	.carouselCausas {
+		width: 70% !important;
+		margin: 0 auto;
+
+		&__card {
+			margin: 0 auto;
+		}
+
 		&__image {
 			width: 600px;
 			height: auto;

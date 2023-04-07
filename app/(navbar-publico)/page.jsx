@@ -23,7 +23,9 @@ export default function Home() {
 						<SimpleCard key={id} title={title} description={description} />
 					))}
 				</section>
+
 				<NuestrasCausas />
+
 				<p>
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium
 					recusandae, animi accusantium corporis itaque doloribus provident

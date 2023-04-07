@@ -1,1 +1,0 @@
-Aquí van las páginas con el navbar (con el que me puedo mover entre páginas), es decir casi todas las páginas excepto la página de donaciones y las que no tengan el navbar en la página de filantropia
