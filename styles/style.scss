@@ -1,3 +1,5 @@
+//@import 'bootstrap/dist/css/bootstrap.min.css';
+
 //UI settings
 @import './base/variables';
 @import './base/reset';
@@ -14,3 +16,5 @@
 @import './components/navbar-micrositio';
 @import './components/footer-micrositio';
 @import './components/paginaInicial/header';
+@import './components/paginaInicial/card';
+@import './components/paginaInicial/carouselCausas';

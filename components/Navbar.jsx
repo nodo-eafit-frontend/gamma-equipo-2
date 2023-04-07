@@ -14,12 +14,16 @@ const links = [
 		route: '/causas',
 	},
 	{
+		label: 'Iniciativas',
+		route: '/iniciativas',
+	},
+	{
 		label: 'Cómo donar',
 		route: '/como-donar',
 	},
 	{
-		label: 'Iniciativas',
-		route: '/iniciativas',
+		label: 'Certificados',
+		route: '/certificados',
 	},
 	{
 		label: 'Informes de gestión',
@@ -44,9 +48,9 @@ const Navbar = ({ exceptionStyle }) => {
 		const handleScroll = () => {
 			const navbar = document.querySelector('.navbar');
 			if (navbar && window.scrollY > 0) {
-				navbar.classList.add('--scrolled');
+				navbar.classList.add('navbar--scrolled');
 			} else {
-				navbar.classList.remove('--scrolled');
+				navbar.classList.remove('navbar--scrolled');
 			}
 		};
 

@@ -1,7 +1,6 @@
 import React from 'react';
-import info from '../app/api/footer-micrositio/route';
+import info from '../data/infoFooterMicrositio';
 import Link from 'next/link';
-
 
 const FooterMicrositio = () => {
 	return (

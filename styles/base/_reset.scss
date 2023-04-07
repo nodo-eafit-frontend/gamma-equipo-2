@@ -15,11 +15,11 @@ html {
 
 body {
 	min-height: 100vh;
-	background-color: $color-light;
+	background-color: $light-color;
 	//font-family: $font-secundary;
 	font-size: $font-size-sr;
 	font-weight: 400;
-	//color: $color-primary;
+	//color: $primary-color;
 	box-sizing: border-box;
 
 	line-height: 1.4;
@@ -88,7 +88,7 @@ em {
 }
 
 hr {
-	//background-color: var(--color-primary);
+	//background-color: var(--primary-color);
 	width: 100%;
 	height: 0.3rem;
 }

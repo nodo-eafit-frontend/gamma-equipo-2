@@ -4,8 +4,8 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	background-color: $color-light;
-	color: $color-dark;
+	background-color: $light-color;
+	color: $dark-color;
 	font-size: $font-size-xs;
 	padding: 15px 0;
 	position: sticky;
@@ -14,6 +14,24 @@
 	transition: background-color 0.5s ease;
 	font-weight: 700;
 	z-index: 1000;
+
+	&--scrolled {
+		background-color: $dark-color;
+		color: $light-color;
+
+		.navbar {
+			&__link {
+				&:hover {
+					border-bottom: 2px solid $light-color !important;
+				}
+			}
+
+			&__title {
+				color: $primary-color !important;
+				transform: scale(1.2);
+			}
+		}
+	}
 
 	&__title {
 		width: 80%;
@@ -58,30 +76,12 @@
 		border-bottom: 2px solid transparent;
 		transition: all 0.3s ease-in-out;
 		&:hover {
-			border-bottom: 2px solid $color-dark;
+			border-bottom: 2px solid $dark-color !important;
 		}
 
 		&--active {
-			color: $color-primary;
-			border-bottom: 2px solid $color-primary;
-			transform: scale(1.2);
-		}
-	}
-}
-
-.--scrolled {
-	background-color: $color-dark;
-	color: $color-light;
-
-	.navbar {
-		&__link {
-			&:hover {
-				border-bottom: 2px solid $color-light;
-			}
-		}
-
-		&__title {
-			color: $color-primary !important;
+			color: $primary-color;
+			border-bottom: 2px solid $primary-color !important;
 			transform: scale(1.2);
 		}
 	}

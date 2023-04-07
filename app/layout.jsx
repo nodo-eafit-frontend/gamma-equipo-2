@@ -1,5 +1,6 @@
 import '../styles/style.scss';
 
+
 import { Poppins, Montserrat } from 'next/font/google';
 
 const poppins = Poppins({
@@ -20,8 +21,8 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body
-				className={`${poppins.className}`}
-				style={{ background: '$color-light' }}
+				className={`${montserrat.className} ${poppins.className}`}
+				style={{ background: '$light-color' }}
 			>
 				{children}
 			</body>

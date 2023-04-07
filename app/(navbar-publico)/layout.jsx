@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../../components/Navbar';
-import { ButtonDonar } from '../../components/Button';
+import { ButtonDonar } from '../../components/paginaInicial/Button';
 
 const layoutPublico = ({ children }) => {
 	return (

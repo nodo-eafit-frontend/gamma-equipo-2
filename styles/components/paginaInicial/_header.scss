@@ -1,11 +1,12 @@
 .header-home {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	flex-wrap: wrap;
-	background-color: $color-light;
+	background-color: $light-color;
 	position: relative;
-	margin: 2rem 0;
+	margin-bottom: 2rem;
+
 	&__image {
 		width: 90%;
 		max-width: 600px;
@@ -25,21 +26,21 @@
 		width: 80%;
 		max-width: 300px;
 		margin: auto;
-		background-color: $color-light;
-		color: $color-dark;
+		background-color: $light-color;
+		color: $dark-color;
 		border-radius: 5px;
 
 		transition: all 0.5s;
+
+		&--scrolled {
+			color: $primary-color;
+			background-color: $dark-color;
+		}
 	}
 
 	& span {
 		text-transform: uppercase;
 	}
-}
-
-.header-home > .--scrolled {
-	color: $color-primary;
-	background-color: $color-dark;
 }
 
 @media (min-width: 768px) {

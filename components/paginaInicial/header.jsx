@@ -8,9 +8,9 @@ const HeaderHome = () => {
 		const handleScroll = () => {
 			const header = document.querySelector('.header-home__title');
 			if (header && window.scrollY > 0) {
-				header.classList.add('--scrolled');
+				header.classList.add('header-home__title--scrolled');
 			} else {
-				header.classList.remove('--scrolled');
+				header.classList.remove('header-home__title--scrolled');
 			}
 		};
 
