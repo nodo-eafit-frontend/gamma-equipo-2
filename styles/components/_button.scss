@@ -10,8 +10,9 @@
 	&__link {
 		padding: 0.5rem;
 		border-radius: 15px;
-		background-color: $color-secundary;
+		background-color: $secundary-color;
 		animation: cambio_color 5s linear infinite;
+		transition: transform 0.1s ease;
 
 		&:hover {
 			transform: scale(1.03);
@@ -21,10 +22,10 @@
 
 @keyframes cambio_color {
 	0% {
-		background-color: $color-secundary;
+		background-color: $secundary-color;
 	}
-	50% {
-		background-color: $color-primary;
+	70% {
+		background-color: $primary-color;
 	}
 }
 

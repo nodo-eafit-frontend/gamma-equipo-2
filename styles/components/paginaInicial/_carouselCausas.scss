@@ -1,0 +1,80 @@
+.carouselCausas {
+	width: 100%;
+	margin: auto;
+	position: relative;
+	display: flex;
+
+	&__card {
+		width: 90% !important;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: rgba($color: $dark-color, $alpha: 1);
+		color: $light-color;
+		padding: 20px;
+	}
+
+	&__image {
+		object-fit: scale-down;
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+	}
+
+	&__containerText {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		margin: auto;
+		text-align: center;
+		padding: 10px 0;
+		font-weight: 500;
+		//background-color: rgba($color: $dark-color, $alpha: 0.3);
+		border-radius: 0 0 10px 10px;
+	}
+
+	&__title {
+		font-size: $font-size-sr;
+	}
+
+	&__button {
+		border-bottom: 2px solid $light-color;
+
+		&:hover {
+			border-bottom: 2px solid $primary-color;
+			color: $primary-color;
+		}
+	}
+}
+
+@media (min-width: 500px) {
+	.carouselCausas {
+		&__image {
+			margin: auto;
+			max-width: 500px;
+			height: auto;
+		}
+
+		&__containerText {
+			max-width: 400px;
+			margin: 0;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.carouselCausas {
+		&__image {
+			width: 600px;
+			height: auto;
+			margin: auto;
+		}
+
+		&__containerText {
+			max-width: 400px;
+		}
+	}
+}
