@@ -13,9 +13,9 @@
 	}
 
 	&__title {
-		font-weight: 600;
+		font-weight: 500;
 		padding: 10px 0;
-		font-size: $font-size-l;
+		font-size: $font-size-s;
 	}
 }
 
@@ -29,8 +29,46 @@
 	}
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1024px) {
 	.simpleCard {
-		max-width: 60%;
+		max-width: 65%;
+	}
+}
+
+//ESTILOS PARA LA IMAGE CARD
+
+.ImageCard {
+	margin: auto;
+	max-width: 300px;
+	position: relative;
+	transition: all 0.5s ease;
+	width: 100%;
+
+	&__imagen {
+		position: relative;
+		transition: all 0.5s ease;
+	}
+
+	&__link {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 0;
+		transition: opacity 0.5s;
+		background-color: $primary-color;
+		color: $light-color;
+		padding: 10px 20px;
+		font-weight: 500;
+		transition: all 0.5s ease;
+
+		&:hover {
+			background: $secundary-color;
+			color: $dark-color;
+		}
+	}
+
+	&:hover &__link {
+		opacity: 1;
 	}
 }

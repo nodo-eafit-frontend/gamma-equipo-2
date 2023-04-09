@@ -12,6 +12,8 @@
 		justify-content: center;
 		background-color: rgba($color: $dark-color, $alpha: 1);
 		color: $light-color;
+		//background-color: $light-color;
+		//color: $dark-color;
 		padding: 20px;
 	}
 
@@ -66,7 +68,7 @@
 
 @media (min-width: 1024px) {
 	.carouselCausas {
-		width: 70% !important;
+		width: 50% !important;
 		margin: 0 auto;
 
 		&__card {
@@ -74,7 +76,9 @@
 		}
 
 		&__image {
-			width: 600px;
+			object-fit: fill;
+
+			max-width: 70%;
 			height: auto;
 			margin: auto;
 		}
