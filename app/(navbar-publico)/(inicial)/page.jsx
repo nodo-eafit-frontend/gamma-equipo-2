@@ -2,6 +2,7 @@ import HeaderHome from '@/components/paginaInicial/header';
 import InfoFilantropia from './InfoFilantropia';
 import NuestrasCausas from './NuestrasCausas';
 import InformesGestion from './InformesGestion';
+import Noticias from './Noticias';
 
 export default function Home({ children }) {
 	return (
@@ -11,6 +12,7 @@ export default function Home({ children }) {
 				<InfoFilantropia />
 				<NuestrasCausas />
 				<InformesGestion />
+				<Noticias />
 				<p>
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium
 					recusandae, animi accusantium corporis itaque doloribus provident

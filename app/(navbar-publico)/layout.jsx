@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 import { ButtonDonar } from '../../components/paginaInicial/Button';
 
 const layoutPublico = ({ children }) => {
@@ -8,6 +9,7 @@ const layoutPublico = ({ children }) => {
 			<Navbar exceptionStyle={'exception'} />
 			<ButtonDonar />
 			{children}
+			<Footer />
 		</div>
 	);
 };
