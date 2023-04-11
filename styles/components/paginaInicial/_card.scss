@@ -41,12 +41,12 @@
 	margin: auto;
 	max-width: 300px;
 	position: relative;
-	transition: all 0.5s ease;
+	transition: all 0.7s ease-in-out;
 	width: 100%;
 
 	&__imagen {
 		position: relative;
-		transition: all 0.5s ease;
+		transition: all 0.7s ease-in-out;
 	}
 
 	&__link {
@@ -70,5 +70,9 @@
 
 	&:hover &__link {
 		opacity: 1;
+	}
+
+	&:hover &__image {
+		filter: blur(5px);
 	}
 }
