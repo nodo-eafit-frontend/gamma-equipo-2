@@ -1,0 +1,71 @@
+.page {
+  position: relative;
+  background-color: $light-color;
+  text-align: center;
+  justify-content: center;
+}
+.document {
+  font-family: $font-tertiary;
+  font-size: $font-size-m;
+  text-align: center;
+
+  &__consultation {
+    background-color: $dark-color;
+    color: white;
+    text-align: center;
+    font-size: $font-size-l;
+    border: 1px solid rgb(83, 83, 83);
+    border-radius: 15px;
+    margin: 10px;
+    font-family: $font-primary;
+  }
+
+  &__tipe {
+    display: inline-block;
+    padding: 10px;
+    font-size: $font-size-m;
+    font-family: $font-tertiary;
+ 
+    text-align: center;
+    font-weight: 500;
+
+    &--num {
+      display: inline-block;
+      border: 1px solid rgb(83, 83, 83);
+      border-radius: 4px;
+      background-color: $secundary-color;
+      height: 4vh;
+      margin: 5px;
+      align-items: center;
+    }
+  }
+
+  &__se {
+    display: inline-block;
+    font-family: $font-tertiary;
+    font-size: $font-size-sr;
+    border: 1px solid rgb(83, 83, 83);
+    border-radius: 4px;
+    background-color: $secundary-color;
+    height: 4vh;
+    text-align: center;
+  }
+}
+
+.donation {
+  display: block;
+  background-color: $light-color;
+  height: 50vh;
+  margin: 10px;
+
+  &__do {
+    font-size: $font-size-s;
+    font-family: $font-tertiary;
+    background-color: $primary-color;
+    font-weight: 800;
+    height: 5vh;
+    text-align: center;
+    border-radius: 15px;
+    
+  }
+}
