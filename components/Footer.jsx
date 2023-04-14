@@ -3,7 +3,7 @@ import imagenesAliados from '../data/dataImagenesAliados';
 import Image from 'next/image';
 
 const Footer = () => {
-	console.log(imagenesAliados);
+	//console.log(imagenesAliados);
 	return (
 		<>
 			<hr />

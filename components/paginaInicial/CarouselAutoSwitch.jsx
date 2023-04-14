@@ -2,13 +2,12 @@
 import React from 'react';
 import 'keen-slider/keen-slider.min.css';
 import { useKeenSlider } from 'keen-slider/react';
-
 import Image from 'next/image';
-import { CarouselCard } from './paginaInicial/Card';
-import Button from './paginaInicial/Button';
+import { CarouselCard } from './Card';
+import Button from './Button';
 import Link from 'next/link';
 
-const Carousel = ({ info }) => {
+const Carousel = ({ info, style }) => {
 	const [sliderRef, instaceRef] = useKeenSlider(
 		{
 			loop: true,
@@ -47,22 +46,22 @@ const Carousel = ({ info }) => {
 
 	return (
 		<>
-			<section ref={sliderRef} className="keen-slider carouselCausas">
+			<section ref={sliderRef} className="keen-slider carouselAutoSwitch">
 				{info.map(({ id, title, infoImg, alt, nameButton, href }) => (
 					<article
-						className="carouselCausas__card keen-slider__slide "
+						className="carouselAutoSwitch__card keen-slider__slide "
 						key={id}
 					>
 						<Image
-							className="carouselCausas__image"
+							className="carouselAutoSwitch__image"
 							src={infoImg.src}
 							alt={alt}
 							width={300}
 							height={300}
 						/>
-						<div className="carouselCausas__containerText">
-							<h3 className="carouselCausas__title">{title}</h3>
-							<Link href={href} className="carouselCausas__button">
+						<div className="carouselAutoSwitch__containerText">
+							<h3 className="carouselAutoSwitch__title">{title}</h3>
+							<Link href={href} className="carouselAutoSwitch__button">
 								{nameButton}
 							</Link>
 						</div>

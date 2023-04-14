@@ -111,8 +111,8 @@ const imagenesAliados = [
 	},
 ];
 
-imagenesAliados.map((imagen) => {
+/* imagenesAliados.map((imagen) => {
 	console.log(imagen);
-});
+}); */
 
 export default imagenesAliados;
