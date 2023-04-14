@@ -6,7 +6,9 @@ const InformesGestion = () => {
 	return (
 		<section className="informesGestionInicio">
 			<h2 className="informesGestionInicio__title">Informes de gestión</h2>
-			<ImageCard info={informesGestion} />
+			<div className="informesGestionInicio__containerCards">
+				<ImageCard info={informesGestion} />
+			</div>
 		</section>
 	);
 };

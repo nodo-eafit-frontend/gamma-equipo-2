@@ -7,4 +7,11 @@
 		font-weight: 600;
 		padding-bottom: 40px;
 	}
+
+	&__containerCards {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
 }
