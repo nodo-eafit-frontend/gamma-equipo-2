@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from '../../../components/Carousel';
+import Carousel from '../../../components/paginaInicial/CarouselAutoSwitch';
 import infoCausas from '../../../data/infoCarouselCausas';
 
 const NuestrasCausas = () => {
