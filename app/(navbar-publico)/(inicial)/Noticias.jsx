@@ -4,10 +4,10 @@ import infoNoticias from '../../../data/infoCarouselNoticias';
 
 const Noticias = () => {
 	return (
-		<section>
+		<>
 			{/* <h2>Noticias</h2>
-			<Carousel info={infoNoticias} /> */}
-		</section>
+			<></> */}
+		</>
 	);
 };
 
