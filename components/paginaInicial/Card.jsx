@@ -28,12 +28,11 @@ export const ImageCard = ({ info }) => {
 						height={300}
 						className="ImageCard__image"
 					/>
-					<Link href={href} className="ImageCard__link">
+					<Link href={href} className="ImageCard__link" target="_blank">
 						{nameButton}
 					</Link>
 				</article>
 			))}
-			;
 		</div>
 	);
 };

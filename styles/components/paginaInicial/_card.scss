@@ -76,3 +76,9 @@
 		filter: blur(5px);
 	}
 }
+
+@media (min-width: 1024px) {
+	.ImageCard {
+		margin: 20px;
+	}
+}
