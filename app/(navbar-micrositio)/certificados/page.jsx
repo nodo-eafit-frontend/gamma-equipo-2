@@ -1,23 +1,15 @@
-import Historialdonaciones from "@/components/certificados/HistorialDonaciones";
-import MyApp from "@/components/certificados/MyButton";
-import NumeroDoc from "@/components/certificados/NumeroDoc";
-import SeleccionarTipoDoc from "@/components/certificados/SeleccionarTipoDoc";
-import TipoDoc from "@/components/certificados/TipoDoc";
-import TituloCertificados from "@/components/certificados/Titulo";
-import React from "react";
+import Form from "@/components/certificados/Form/Form";
+import Historialdonaciones from "@/components/certificados/HistorialDonaciones/HistorialDonaciones";
+import Titulo from "@/components/certificados/Titulo/Titulo";
 
-const FormCertificados = () => {
+const Certificados = () => {
   return (
     <div className="page">
-      <TituloCertificados />
-      <TipoDoc />
-      <SeleccionarTipoDoc />
-      <NumeroDoc />
-      <MyApp />
+      <Titulo />
+      <Form />
       <Historialdonaciones />
-
     </div>
   );
 };
 
-export default FormCertificados;
+export default Certificados;
