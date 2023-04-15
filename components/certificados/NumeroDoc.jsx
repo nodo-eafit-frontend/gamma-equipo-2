@@ -1,6 +1,7 @@
 import React from 'react'
 
-export default function NumeroDoc () {
+
+export default function NumeroDoc ({children}) {
   return (
     <>
      <label htmlFor="number-doc" className='document__tipe'>Número de documento</label><br />

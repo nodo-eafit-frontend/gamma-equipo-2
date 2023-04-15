@@ -1,4 +1,5 @@
 import Historialdonaciones from "@/components/certificados/HistorialDonaciones";
+import MyApp from "@/components/certificados/MyButton";
 import NumeroDoc from "@/components/certificados/NumeroDoc";
 import SeleccionarTipoDoc from "@/components/certificados/SeleccionarTipoDoc";
 import TipoDoc from "@/components/certificados/TipoDoc";
@@ -12,6 +13,7 @@ const FormCertificados = () => {
       <TipoDoc />
       <SeleccionarTipoDoc />
       <NumeroDoc />
+      <MyApp />
       <Historialdonaciones />
 
     </div>
