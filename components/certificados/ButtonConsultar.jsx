@@ -2,8 +2,8 @@ import React from 'react'
 
 export const ButtonConsultar = () => {
   return (
-    <div>
+    <span>
         <button>Consultar certificados</button>
-    </div>
+    </span>
   )
 }

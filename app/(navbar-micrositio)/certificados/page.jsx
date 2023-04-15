@@ -5,11 +5,13 @@ import NumeroDoc from "@/components/certificados/NumeroDoc";
 import SeleccionarTipoDoc from "@/components/certificados/SeleccionarTipoDoc";
 import TipoDoc from "@/components/certificados/TipoDoc";
 import TituloCertificados from "@/components/certificados/Titulo";
+import { ButtonDonar } from "@/components/paginaInicial/Button";
 import React from "react";
 
 const FormCertificados = () => {
   return (
     <div className="page">
+      <ButtonDonar />
       <TituloCertificados />
       <TipoDoc />
       <SeleccionarTipoDoc />
