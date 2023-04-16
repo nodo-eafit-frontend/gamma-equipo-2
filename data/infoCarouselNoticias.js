@@ -6,12 +6,13 @@ export const getAllImages = () => {
 	return urls;
 };
 
-//console.log(getAllImages());
+//onsole.log(getAllImages());
 
-const infoCausas = [
+const infoNoticias = [
 	{
 		id: 1,
-		title: 'Equidad Social e inclusión',
+		title:
+			'El Centro de Filantropía sigue sumando esfuerzos para apoyar de manera integral a todos los eafitenses',
 		infoImg: getAllImages()[0],
 		alt: 'imagen Equidad Social e inclusión',
 		nameButton: 'Ver más',
@@ -43,8 +44,8 @@ const infoCausas = [
 	},
 ];
 /* 
-infoCausas.map((causa) => {
+infoNoticias.map((causa) => {
 	console.log(causa);
 }); */
 
-export default infoCausas;
+export default infoNoticias;
