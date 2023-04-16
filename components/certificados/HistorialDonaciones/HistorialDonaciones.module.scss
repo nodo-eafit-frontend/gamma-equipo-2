@@ -1,0 +1,19 @@
+@import "../../../styles/base/variables";
+
+.donation {
+  align-items: center;
+  text-align: center;
+  background-color: $light-color;
+  height: 50px;
+  margin: 10px;
+
+  &__history {
+    font-size: $font-size-s;
+    font-family: $font-tertiary;
+    background-color: $primary-color;
+    font-weight: 800;
+    height: 5vh;
+    text-align: center;
+    border-radius: 15px;
+  }
+}
