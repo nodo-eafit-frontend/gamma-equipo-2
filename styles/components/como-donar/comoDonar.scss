@@ -57,7 +57,32 @@ p {
 
 hr {
     width: 100%;
-    height: 0.1rem  !important;
+    height: 0.1rem !important;
     background-color: lightgray !important;
     margin: 20px 0 20px 0;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
+.col-md-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+}
+
+.col-md-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+}
+
+.header > h2 
+{
+    margin-bottom: 50px;
 }
