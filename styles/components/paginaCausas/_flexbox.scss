@@ -59,11 +59,11 @@ $gap	: 0px;
 	text-align: justify;
 
 	&__image {
-		width: 50%;
-		max-width: 200px;
+		width: 60%;
+		max-width: 400px;
 		height: fit-content;
 		margin: auto;
-		border-radius: 20px;
+		border-radius: 15px;
 		object-fit: contain;
 	}
 
@@ -72,19 +72,21 @@ $gap	: 0px;
 		transform: translate(0%, 10%);
 		text-align: center;
 		font-size: $font-size-m;
-		width: 90%;
+		font-weight: bold;
+		width: 80%;
 		max-width: 300px;
 		margin: 0 auto;
-		background-color: $dark-color;
-		color: $light-color;
+		background-color: $secundary-color;
+		color: $dark-color;
 		border-radius: 5px;
 
 	}
 	&__subtitle{
 		text-align: center;
 		font-size: $font-size-m;
+		font-weight: 570;
 		width: 70%;
-		max-width: 600px;
+		max-width: 900px;
 		margin: 0 auto;
 		color: $dark-color;
 	}

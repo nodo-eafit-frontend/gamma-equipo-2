@@ -56,26 +56,37 @@ const TransformacionH = () => {
                 <div className='col'>
                     <div className='col-ex'>
                         <h2>Cultura</h2>
+                        <p>
+                            Apoyamos actividades culturales y artísticas de la Universidad, 
+                            tales como obras de literatura, arte, películas, documentales, 
+                            música, entre otras. Además, con esta iniciativa se contribuye 
+                            al fortalecimiento del acervo documental de la Universidad.</p>
                     </div>
                 </div>
             </div>
-            <div className='container'>
-                <div className='col'>
-                    <div className='col-ex'>
-                        <Image
-                            src={imgDeporte}
-                            alt="transformacion humanistica"
-                            className="col-ex__image"
-                            quality={100}
-                        />
+            <section>
+                <div className='container'>
+                    <div className='col'>
+                        <div className='col-ex'>
+                            <Image
+                                src={imgDeporte}
+                                alt="transformacion humanistica"
+                                className="col-ex__image"
+                                quality={100}
+                            />
+                        </div>
+                    </div>
+                    <div className='col'>
+                        <div className='col-ex'>
+                            <h2>Deporte</h2>
+                            <p>
+                            Fomentamos el deporte y contribuimos al desarrollo integral de los deportistas de 
+                            EAFIT en diferentes competencias y eventos a nivel representativo de la Institución.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div className='col'>
-                    <div className='col-ex'>
-                        <h2>Deporte</h2>
-                    </div>
-                </div>
-            </div>
+            </section>
 
 		</>
 	);
