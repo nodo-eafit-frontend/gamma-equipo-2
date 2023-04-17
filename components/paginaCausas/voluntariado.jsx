@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import imgVoluntariado from '../../assets/paginaCausas/4Inspiracion-voluntariado.jpg'
+import ButtonVoluntariado from './ButtonVoluntariado';
 
 const Voluntariado = () => {
     
@@ -31,8 +32,14 @@ const Voluntariado = () => {
                             a través de la contribución eficaz de tiempo y conocimiento.
                         </p>
                     </div>
+                                        
                 </div>
             </div>
+            <h1 className='col__subtitle'>
+                        ¡Haz parte del voluntariado!<br/>
+                        <ButtonVoluntariado/>
+                </h1>
+                    
 		</>
 	);
 };

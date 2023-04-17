@@ -20,6 +20,19 @@
 	}
 }
 
+.buttonVoluntariado {
+	display: flex;
+	justify-content: center;
+	padding-right: 5px;
+	width: 100%;
+	//z-index: 100;
+	position: relative;
+	padding: 0.5rem;
+	border-radius: 15px;
+	background-color: $primary-color;
+	//top: 130px;
+}
+
 @keyframes cambio_color {
 	0% {
 		background-color: $secundary-color;
