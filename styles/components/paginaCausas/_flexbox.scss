@@ -1,20 +1,3 @@
-/* .flexbox-container {
-	display: -ms-flex;
-	display: -webkit-flex;
-	display: flex;
-}
-
-.flexbox-container > div {
-	width: 50%;
-	padding: 10px;
-  background: $secundary-color;
-}
-
-.flexbox-container > div:first-child {
-	margin-right: 10px;
-}
- */
-
 $cols	: 12;
 $gap	: 0px;
 
@@ -24,35 +7,42 @@ $gap	: 0px;
 	margin: 0 auto;
 	//padding-left: $gap/2;
 	//padding-right: $gap/2;
-
-	//height: 60vh;
-	max-width: 1024px;
 	display: flex;
 	flex-wrap: wrap;
-	padding-bottom: 3rem;
+	padding-bottom: 2rem;
+	padding-left: 5rem;
+	padding-right: 10rem;
 
-}
+	&__fondo{
+		background-color: #dffdff;
+		max-width: fit-content;
+		display: flex;
+		flex-wrap: wrap;
+		
+	}
 
-/* .gs-grid{
-	display: flex;
-	flex-wrap: wrap;
-	//margin-left: $gap / -2;
-	//margin-right: $gap / -2;
+} 
 
-} */
-
-[class*="col-"],
+/* [class*="col-"],
 .col{
 	width: 100%;
 	max-width: 100%;
-	//padding-left: $gap / 2;
-	//padding-right: $gap / 2;
+	//padding-left: $gap/2;
+	//padding-right: $gap/2;
 	flex: 1 0 0;
-}
+	display: flex;
+} */
 
 
 
-.col-ex{
+.col{
+	width: 100%;
+	max-width: 100%;
+	//padding-left: $gap/2;
+	//padding-right: $gap/2;
+	flex: 1 0 0;
+	display: flex;
+
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	display: grid;
@@ -60,7 +50,7 @@ $gap	: 0px;
 
 	&__image {
 		width: 60%;
-		max-width: 400px;
+		max-width: 300px;
 		height: fit-content;
 		margin: auto;
 		border-radius: 15px;
@@ -68,11 +58,11 @@ $gap	: 0px;
 	}
 
 	&__title{
-		position: relative;
-		transform: translate(0%, 10%);
+		position: absolute;
+		transform: translate(56%, -40%);
 		text-align: center;
 		font-size: $font-size-m;
-		font-weight: bold;
+		font-weight: bolder;
 		width: 80%;
 		max-width: 300px;
 		margin: 0 auto;
@@ -85,9 +75,55 @@ $gap	: 0px;
 		text-align: center;
 		font-size: $font-size-m;
 		font-weight: 570;
-		width: 70%;
-		max-width: 900px;
+		width: 50%;
+		max-width: 1000px;
 		margin: 0 auto;
 		color: $dark-color;
 	}
+
+	&__sub{
+		position: relative;
+		transform: translate(-50%, 0%);
+		font-size: $font-size-s;
+		font-weight: 600;
+		width: 50%;
+		max-width: 600px;
+		margin: 0 auto;
+		color: $primary-color;
+	}
 }
+
+/* @media (min-width: 768px) {
+	.container{
+		justify-content: center;
+	}
+	
+	.col {
+		&__title {
+			font-size: $font-size-m;
+			font-weight: 500;
+		}
+		&__title {
+			font-size: $font-size-m;
+			font-weight: 460;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	
+	.col {
+		&__title {
+			position: absolute;
+			transform: translate(56%, -40%);
+			font-size: $font-size-m;
+			font-weight: 600;
+			max-width: 300px;
+		}
+		&__subtitle {
+			font-size: $font-size-m;
+			font-weight: 570;
+			max-width: 300px;
+		}
+	}
+}  */

@@ -2,8 +2,11 @@ lockfileVersion: '6.0'
 
 dependencies:
   bootstrap:
+    specifier: ^5.1.3
+    version: 5.1.3(@popperjs/core@2.11.7)
+  bootswatch:
     specifier: ^5.2.3
-    version: 5.2.3(@popperjs/core@2.11.7)
+    version: 5.2.3
   eslint:
     specifier: 8.37.0
     version: 8.37.0
@@ -25,6 +28,12 @@ dependencies:
   react-dom:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
+  react-iframe:
+    specifier: ^1.8.5
+    version: 1.8.5(react@18.2.0)
+  react-player:
+    specifier: ^2.12.0
+    version: 2.12.0(react@18.2.0)
 
 devDependencies:
   react-icons:
@@ -508,12 +517,16 @@ packages:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
 
-  /bootstrap@5.2.3(@popperjs/core@2.11.7):
-    resolution: {integrity: sha512-cEKPM+fwb3cT8NzQZYEu4HilJ3anCrWqh3CHAok1p9jXqMPsPTBhU25fBckEJHJ/p+tTxTFTsFQGM+gaHpi3QQ==}
+  /bootstrap@5.1.3(@popperjs/core@2.11.7):
+    resolution: {integrity: sha512-fcQztozJ8jToQWXxVuEyXWW+dSo8AiXWKwiSSrKWsRB/Qt+Ewwza+JWoLKiTuQLaEPhdNAJ7+Dosc9DOIqNy7Q==}
     peerDependencies:
-      '@popperjs/core': ^2.11.6
+      '@popperjs/core': ^2.10.2
     dependencies:
       '@popperjs/core': 2.11.7
+    dev: false
+
+  /bootswatch@5.2.3:
+    resolution: {integrity: sha512-tvnW15WoOY2sEp1uT1ITDQiJy2TekQa+K+Q28WDXibleIxsY0nAoC9IylbnUPD7Q5vkCIclOuBHLVBblJYYPSA==}
     dev: false
 
   /brace-expansion@1.1.11:
@@ -650,6 +663,11 @@ packages:
 
   /deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
+
+  /deepmerge@4.3.1:
+    resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==}
+    engines: {node: '>=0.10.0'}
+    dev: false
 
   /define-lazy-prop@2.0.0:
     resolution: {integrity: sha512-Ds09qNh8yw3khSjiJjiUInaGX9xlqZDY7JVryGxdxV7NPeuqQfplOpQ66yJFZut3jLa5zOwkXw1g9EI2uKh4Og==}
@@ -1628,6 +1646,10 @@ packages:
       type-fest: 0.3.1
     dev: true
 
+  /load-script@1.0.0:
+    resolution: {integrity: sha512-kPEjMFtZvwL9TaZo0uZ2ml+Ye9HUMmPwbYRJ324qF9tqMejwykJ5ggTyvzmrbBeapCAbk98BSbTeovHEEP1uCA==}
+    dev: false
+
   /locate-path@3.0.0:
     resolution: {integrity: sha512-7AO748wWnIhNqAuaty2ZWHkQHRSNfPVIsPIfwEOWO22AmaoVrWavlOcMR5nzTLNYvp36X220/maaRsrec1G65A==}
     engines: {node: '>=6'}
@@ -1656,6 +1678,10 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
+
+  /memoize-one@5.2.1:
+    resolution: {integrity: sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==}
+    dev: false
 
   /merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
@@ -1987,6 +2013,10 @@ packages:
       scheduler: 0.23.0
     dev: false
 
+  /react-fast-compare@3.2.1:
+    resolution: {integrity: sha512-xTYf9zFim2pEif/Fw16dBiXpe0hoy5PxcD8+OwBnTtNLfIm3g6WxhKNurY+6OmdH1u6Ta/W/Vl6vjbYP1MFnDg==}
+    dev: false
+
   /react-icons@4.8.0(react@18.2.0):
     resolution: {integrity: sha512-N6+kOLcihDiAnj5Czu637waJqSnwlMNROzVZMhfX68V/9bu9qHaMIJC4UdozWoOk57gahFCNHwVvWzm0MTzRjg==}
     peerDependencies:
@@ -1995,11 +2025,33 @@ packages:
       react: 18.2.0
     dev: true
 
+  /react-iframe@1.8.5(react@18.2.0):
+    resolution: {integrity: sha512-F4cQJGs3ydaG6fJWfuz9yLwOU0Trzl6kttXuUG+vYwosH8enOOFxZWEDQCSbNVO8ayjfYZeqLxEvdvcsSy4GvA==}
+    peerDependencies:
+      react: '>=16.x.x'
+    dependencies:
+      object-assign: 4.1.1
+      react: 18.2.0
+    dev: false
+
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
   /react-lifecycles-compat@3.0.4:
     resolution: {integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==}
+    dev: false
+
+  /react-player@2.12.0(react@18.2.0):
+    resolution: {integrity: sha512-rymLRz/2GJJD+Wc01S7S+i9pGMFYnNmQibR2gVE3KmHJCBNN8BhPAlOPTGZtn1uKpJ6p4RPLlzPQ1OLreXd8gw==}
+    peerDependencies:
+      react: '>=16.6.0'
+    dependencies:
+      deepmerge: 4.3.1
+      load-script: 1.0.0
+      memoize-one: 5.2.1
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-fast-compare: 3.2.1
     dev: false
 
   /react-transition-group@4.4.5(react-dom@18.2.0)(react@18.2.0):
