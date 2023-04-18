@@ -8,7 +8,7 @@ export default function Form() {
       <div className={form__group}>
         <label htmlFor="tipo-documento">Tipo de documento</label>
         <select id="tipo-documento" className={form__input}>
-          <option>Seleccione su tipo de documento</option>
+          <option disabled selected>Seleccione su tipo de documento</option>
           <option>Documento de identidad país de origen</option>
           <option>Documento naconional identidad</option>
           <option>Identificación nacional</option>
