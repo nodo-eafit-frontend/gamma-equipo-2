@@ -6,7 +6,7 @@ export default function Historialdonaciones() {
 
   return (
     <div className={donation}>
-      <p className={donation__history}>Historial de donaciones</p>
+      <p className={donation__history}>Historial de donaciones</p> 
     </div>
   );
 }
