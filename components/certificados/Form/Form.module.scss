@@ -50,8 +50,9 @@
             border: 1px solid $primary-color;
 
             &:hover {
-                background-color: #37549a;
-                color: $light-color;
+                background-color: rgb(56, 185, 218);
+                color: black;
+                border: 1px solid black;
             }
         }
 
