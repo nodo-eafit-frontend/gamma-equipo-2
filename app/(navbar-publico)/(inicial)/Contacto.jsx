@@ -65,7 +65,7 @@ const Contacto = () => {
 						<p className="contacto__info contacto__info--color">
 							{email.map((dato) => (
 								<>
-									<span>{dato}</span>
+									<span key={dato}>{dato}</span>
 								</>
 							))}
 						</p>
