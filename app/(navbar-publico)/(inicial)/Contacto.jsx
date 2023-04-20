@@ -22,7 +22,7 @@ const Contacto = () => {
 					if (mouseOver) return;
 					timeout = setTimeout(() => {
 						slider.next();
-					}, 2000);
+					}, 1000);
 				}
 				slider.on('created', () => {
 					slider.container.addEventListener('mouseover', () => {
@@ -58,7 +58,7 @@ const Contacto = () => {
 						<p className="contacto__info ">
 							{info.map((dato) => (
 								<>
-									<span>{dato}</span>
+									<span key={dato}>{dato}</span>
 								</>
 							))}
 						</p>
