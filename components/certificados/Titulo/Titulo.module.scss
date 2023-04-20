@@ -1,0 +1,16 @@
+@import '../../../styles/base/variables';
+
+.titulo {
+    font-family: $font-primary;
+    font-size: $font-size-l;
+    background-color: $dark-color;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 10px;
+    font-weight: bold;
+    margin: 20px;
+    border-radius: 15px;
+    border: 1px solid rgb(83, 83, 83);
+}
