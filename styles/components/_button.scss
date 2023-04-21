@@ -23,14 +23,13 @@
 .buttonVoluntariado {
 	display: flex;
 	justify-content: center;
-	padding-right: 5px;
-	width: 100%;
-	//z-index: 100;
+	width: 50%;
 	position: relative;
+	transform: translate(50%,0);
 	padding: 0.5rem;
-	border-radius: 15px;
+	border-radius: 5px;
 	background-color: $primary-color;
-	//top: 130px;
+	top: 10px;
 }
 
 @keyframes cambio_color {
