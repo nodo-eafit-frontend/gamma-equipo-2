@@ -1,0 +1,63 @@
+.accordion {
+	width: 100%;
+	padding: 10px;
+
+	&__toggler {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px;
+		flex-wrap: wrap;
+		border-radius: 10px 10px 0 0;
+		cursor: pointer;
+		//background-color: $secundary-color;
+
+		&:hover {
+			background-color: $secundary-color;
+		}
+	}
+
+	&__title {
+		width: 100%;
+	}
+
+	&__icon {
+		width: 100%;
+	}
+
+	&__content {
+		white-space: pre-line;
+		padding: 10px;
+		border-radius: 0 0 10px 10px;
+		background-color: $secundary-color;
+	}
+}
+
+@media (min-width: 1024px) {
+	.accordion {
+		width: 80%;
+		margin: auto;
+
+		&__title {
+			width: max-content;
+		}
+		&__icon {
+			width: max-content;
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.accordion {
+		width: 60%;
+		margin: auto;
+
+		&__title {
+			width: max-content;
+		}
+		&__icon {
+			width: max-content;
+		}
+	}
+}

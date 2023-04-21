@@ -5,6 +5,7 @@ const layoutMicrositio = ({ children }) => {
 	return (
 		<div>
 			<NavbarMicrositio />
+			
 			{children}
 			<FooterMicrositio />
 		</div>

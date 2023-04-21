@@ -6,7 +6,7 @@ export const getAllImages = () => {
 	return urls;
 };
 
-//onsole.log(getAllImages());
+//console.log(getAllImages());
 
 const infoCausas = [
 	{
