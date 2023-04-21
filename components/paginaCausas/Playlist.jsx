@@ -8,7 +8,7 @@ const PlaylistEmbed = ({ playlistId }) => (
             src={`https://www.youtube.com/embed/videoseries?list=${playlistId}`}
             allow="autoplay; encrypted-media"
             allowFullScreen
-            title="YouTube Playlist"
+            title="YouTube Playlist testimonios"
     />
     </div>
   );
