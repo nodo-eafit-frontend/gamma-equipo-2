@@ -3,9 +3,8 @@ import React from 'react';
 import 'keen-slider/keen-slider.min.css';
 import { useKeenSlider } from 'keen-slider/react';
 import Image from 'next/image';
-import { CarouselCard } from './Card';
-import Button from './Button';
 import Link from 'next/link';
+import '../../styles/components/paginaInicial/_carouselAutoSwitch.scss';
 
 const Carousel = ({ info, style }) => {
 	const [sliderRef, instaceRef] = useKeenSlider(

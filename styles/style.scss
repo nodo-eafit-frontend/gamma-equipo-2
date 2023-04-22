@@ -4,25 +4,6 @@
 @import './base/variables';
 @import './base/reset';
 
-//layouts
-@import './layouts/layoutPublico';
-
-//pages
-@import './pages/inicial';
-
-
 //components
-@import './components/navbar';
-@import './components/footer';
-@import './components/button';
-@import './components/accordion';
-@import './components/navbar-micrositio';
-@import './components/footer-micrositio';
-@import './components/paginaInicial/header';
-@import './components/paginaInicial/card';
-@import './components/paginaInicial/nuestrasCausas';
-@import './components/paginaInicial/carouselAutoSwitch';
-@import './components/paginaInicial/informesGestion';
-@import './components/paginaInicial/contacto';
-@import './components/paginaInicial/preguntasFrecuentes';
-@import './components/como-donar/comoDonar';
+
+//@import './components/como-donar/comoDonar';

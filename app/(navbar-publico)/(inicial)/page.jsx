@@ -15,8 +15,8 @@ export default function Home({ children }) {
 				<NuestrasCausas />
 				<InformesGestion />
 				<Noticias />
-				<PreguntasFrecuentes />
 				<Contacto />
+				<PreguntasFrecuentes />
 			</main>
 		</>
 	);

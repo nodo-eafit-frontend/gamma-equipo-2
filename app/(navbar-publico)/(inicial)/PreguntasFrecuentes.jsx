@@ -1,6 +1,7 @@
 import React from 'react';
 import Accordion from '../../../components/paginaInicial/Accordion';
 import preguntrasFrecuentes from '../../../data/preguntasFrecuentes';
+import '../../../styles/components/paginaInicial/_preguntasFrecuentes.scss';
 
 const PreguntasFrecuentes = () => {
 	return (

@@ -4,6 +4,7 @@ import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import Image from 'next/image';
 import infoContacto from '../../../data/infoContacto';
+import '../../../styles/components/paginaInicial/_contacto.scss';
 
 const Contacto = () => {
 	const [sliderRef] = useKeenSlider(
@@ -64,9 +65,7 @@ const Contacto = () => {
 						</p>
 						<p className="contacto__info contacto__info--color">
 							{email.map((dato) => (
-								<>
-									<span key={dato}>{dato}</span>
-								</>
+								<span key={dato}>{dato}</span>
 							))}
 						</p>
 					</article>

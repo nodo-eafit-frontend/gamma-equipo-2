@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import Image from 'next/image';
 import imgHeader from '../../assets/paginaInicial/foto-estudiantes.png';
+import '../../styles/components/paginaInicial/_header.scss';
 
 const HeaderHome = () => {
 	useEffect(() => {
