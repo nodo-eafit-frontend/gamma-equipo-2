@@ -7,7 +7,7 @@ const Card = () => {
 	return <div>Card</div>;
 };
 
-export const ImageCard = ({ info }) => {
+export const ImageCard = ({ info, openInOtherPage }) => {
 	//console.log(info);
 	return (
 		<div
@@ -25,11 +25,15 @@ export const ImageCard = ({ info }) => {
 					<Image
 						src={infoImg.src}
 						alt={alt}
+						className="ImageCard__image"
 						width={300}
 						height={300}
-						className="ImageCard__image"
 					/>
-					<Link href={href} className="ImageCard__link" target="_blank">
+					<Link
+						href={href}
+						className="ImageCard__link"
+						target={openInOtherPage ? '_blank' : null}
+					>
 						{nameButton}
 					</Link>
 				</article>

@@ -3,8 +3,8 @@ import React from 'react';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import Image from 'next/image';
-import infoContacto from '../../../data/infoContacto';
-import '../../../styles/components/paginaInicial/_contacto.scss';
+import infoContacto from '../../data/infoContacto';
+import '../../styles/components/paginaInicial/_contacto.scss';
 
 const Contacto = () => {
 	const [sliderRef] = useKeenSlider(

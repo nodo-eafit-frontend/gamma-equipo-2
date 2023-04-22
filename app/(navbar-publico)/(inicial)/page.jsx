@@ -1,10 +1,10 @@
 import HeaderHome from '@/components/paginaInicial/header';
-import InfoFilantropia from './InfoFilantropia';
-import NuestrasCausas from './NuestrasCausas';
-import InformesGestion from './InformesGestion';
-import Noticias from './Noticias';
-import PreguntasFrecuentes from './PreguntasFrecuentes';
-import Contacto from './Contacto';
+import InfoFilantropia from '../../../components/paginaInicial/InfoFilantropia';
+import NuestrasCausas from '../../../components/paginaInicial/NuestrasCausas';
+import InformesGestion from '../../../components/paginaInicial/InformesGestion';
+//import Noticias from '../../../components/paginaInicial/Noticias';
+import Contacto from '../../../components/paginaInicial/Contacto';
+import PreguntasFrecuentes from '../../../components/paginaInicial/PreguntasFrecuentes';
 
 export default function Home({ children }) {
 	return (
@@ -14,7 +14,6 @@ export default function Home({ children }) {
 				<InfoFilantropia />
 				<NuestrasCausas />
 				<InformesGestion />
-				<Noticias />
 				<Contacto />
 				<PreguntasFrecuentes />
 			</main>
