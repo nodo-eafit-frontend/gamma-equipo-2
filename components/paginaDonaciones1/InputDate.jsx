@@ -1,9 +1,10 @@
 import React from "react";
 
-export const InputDate = () => {
+export const InputDate = (props) => {
   return (
     <div>
-      <input className="inputDate" type="date" ></input>
+      <label htmlFor={props.id}>{props.label}</label>
+      <input className="inputDate" type={props.type} id={props.id} placeholder={props.placeholder} ></input>
     </div>
   );
 };

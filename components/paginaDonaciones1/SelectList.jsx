@@ -1,17 +1,27 @@
-
 import React from 'react';
 
-export function SelectList() {
-    return (
-      <div>
-        <select className='selectList'>
-          <option value="">Selecciona una opción</option>
-          <option value="opcion1">Opción 1</option>
-          <option value="opcion2">Opción 2</option>
-          <option value="opcion3">Opción 3</option>
-        </select>
-        
-      </div>
-    );
+export function SelectList(props) {
+  let options = [];
+  if (props.options) {
+    options = props.options;
   }
-  
+
+  return (
+    <div>
+      <label htmlFor={props.id}>{props.label}</label>
+      <select
+        className='selectList'
+        id={props.id}
+        value={props.value}
+        onChange={props.onChange}
+        
+      >
+        {options.map((option) => (
+          <option value={option.value} key={option.value}>
+            {option.label}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
+}
