@@ -11,7 +11,9 @@ const HeaderHome = () => {
 			if (header && window.scrollY > 0) {
 				header.classList.add('header-home__title--scrolled');
 			} else {
-				header.classList.remove('header-home__title--scrolled');
+				if (header !== null) {
+					header.classList.remove('header-home__title--scrolled');
+				}
 			}
 		};
 

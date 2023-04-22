@@ -56,13 +56,11 @@ const Contacto = () => {
 							height={200}
 						/>
 						<h3 className="contacto__name">{name}</h3>
-						<p className="contacto__info ">
+						<div className="contacto__info ">
 							{info.map((dato) => (
-								<>
-									<span key={dato}>{dato}</span>
-								</>
+								<span key={dato}>{dato}</span>
 							))}
-						</p>
+						</div>
 						<p className="contacto__info contacto__info--color">
 							{email.map((dato) => (
 								<span key={dato}>{dato}</span>
