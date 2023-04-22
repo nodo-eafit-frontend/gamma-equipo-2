@@ -14,8 +14,8 @@ const Testimonios = () => (
   export default Testimonios;
 
 /* const Testimonios = () => {
-    const videos = obtenerVideos();
-    const videoIds = videos.map((video) => video.id);
+    const videos = infoTestimonios();
+    const videoIds = videos.map((videos) => videos.id);
 
   return (
     <div>

@@ -6,17 +6,20 @@ import ReactPlayer from 'react-player';
 const VideoCarousel = ({ videos }) => {
     const settings = {
       dots: true,
-      infinite: true,
+      //infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      centerMode: true,
+      centerPadding: '0px',
     };
     
     return (
       <Slider {...settings}>
         {videos.map((video) => (
           <div key={video.id}>
-            <ReactPlayer url={video.url} controls />
+            <Youtube videoId={video.id} />
+            {/* <ReactPlayer url={video.url} controls /> */}
           </div>
         ))}
       </Slider>
