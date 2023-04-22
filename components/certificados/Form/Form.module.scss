@@ -1,4 +1,4 @@
-@import '../../../styles/base/variables';
+@import "../../../styles/base/variables";
 
 .form {
     display: flex;
@@ -14,6 +14,7 @@
         width: 70%;
         margin-bottom: 40px;
         font-weight: 700;
+    
 
         &--buttons {
             width: 40%;
@@ -30,6 +31,7 @@
         padding: 10px;
         border-radius: 10px;
         text-align: center;
+        appearance: auto;
     }
 
     &__button {
@@ -48,8 +50,9 @@
             border: 1px solid $primary-color;
 
             &:hover {
-                background-color: #37549a;
-                color: $light-color;
+                background-color: rgb(56, 185, 218);
+                color: $dark-color;
+                border: 1px solid black;
             }
         }
 

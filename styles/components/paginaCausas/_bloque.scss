@@ -1,0 +1,12 @@
+.linea {
+    border-top: 10px solid #68bec6;
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+    padding-bottom: 2rem;
+
+    &__small{
+        border-top: 2px solid #68bec6;
+        padding-bottom: 2rem;
+    }
+  }

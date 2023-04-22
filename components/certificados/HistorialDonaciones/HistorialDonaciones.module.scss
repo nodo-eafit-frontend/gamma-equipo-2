@@ -4,16 +4,20 @@
   align-items: center;
   text-align: center;
   background-color: $light-color;
-  height: 50px;
+  height: 250px;
   margin: 10px;
+  padding: 10px 10px;
+  margin: 20px;
 
   &__history {
+    justify-content: center;
     font-size: $font-size-s;
     font-family: $font-tertiary;
     background-color: $primary-color;
     font-weight: 800;
     height: 5vh;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 5px;
   }
+  
 }
