@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
+import '../../styles/components/paginaInicial/_accordion.scss';
 
 const Accordion = ({ info }) => {
 	const [isOpen, setIsOpen] = useState(new Array(info.length).fill(false));

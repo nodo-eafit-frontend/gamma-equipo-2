@@ -1,6 +1,7 @@
 import React from 'react';
 import info from '../data/infoFooterMicrositio';
 import Link from 'next/link';
+import '../styles/components/_footer-micrositio.scss';
 
 const FooterMicrositio = () => {
 	return (
@@ -25,7 +26,9 @@ const FooterMicrositio = () => {
 				))}
 			</section>
 			<section className="footerMicrositio__container-frase">
-				<h2 className="footerMicrositio__frase">Ayuda a volar, empieza a donar</h2>
+				<h2 className="footerMicrositio__frase">
+					Ayuda a volar, empieza a donar
+				</h2>
 			</section>
 		</footer>
 	);

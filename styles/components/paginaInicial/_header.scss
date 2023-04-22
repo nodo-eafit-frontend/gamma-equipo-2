@@ -1,3 +1,5 @@
+@import '../../style.scss';
+
 .header-home {
 	display: flex;
 	justify-content: center;
@@ -28,7 +30,7 @@
 		margin: auto;
 		background-color: $light-color;
 		color: $dark-color;
-		border-radius: 5px;
+		border-radius: 15px;
 
 		transition: all 0.5s;
 

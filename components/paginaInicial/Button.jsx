@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import '../../styles/components/paginaInicial/_button.scss';
 
 const Button = ({
 	name,
