@@ -7,10 +7,10 @@
 //layouts
 @import './layouts/layoutPublico';
 
-//pages
+// // //pages
 @import './pages/inicial';
 
-//components
+// // //components
 @import './components/navbar';
 @import './components/button';
 @import './components/navbar-micrositio';
@@ -18,3 +18,10 @@
 @import './components/paginaInicial/header';
 @import './components/paginaInicial/card';
 @import './components/paginaInicial/carouselCausas';
+@import './components/paginaDonaciones1/button';
+@import './components/paginaDonaciones1/input-date';
+@import './components/paginaDonaciones1/input-text';
+@import './components/paginaDonaciones1/select-list';
+@import './components/paginaDonaciones1/input-number';
+@import './components/paginaDonaciones1/input-email';
+@import './components/paginaDonaciones1/content-donacion'
