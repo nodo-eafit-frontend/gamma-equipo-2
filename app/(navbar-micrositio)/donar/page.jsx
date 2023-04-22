@@ -1,7 +1,13 @@
 import React from 'react';
+import InformacionDeDonacion from '@/components/donar2/Form2';
+
 
 const Donar = () => {
-	return <div>Donar</div>;
+	return (
+	<div>
+		<InformacionDeDonacion />
+	</div>
+	);
 };
 
 export default Donar;
