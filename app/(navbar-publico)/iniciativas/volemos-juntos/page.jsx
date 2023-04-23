@@ -4,7 +4,8 @@ import banner from '../../../../assets/volemos-juntos/banner.png';
 import iconomanos from '../../../../assets/volemos-juntos/iconomanos.png';
 import iconodinero from '../../../../assets/volemos-juntos/iconodinero-04.png';
 import iconopersona from '../../../../assets/volemos-juntos/iconopersona-05.png';
-import { FaEnvelope } from 'react-icons/fa';
+import { FaEnvelope, FaArrowDown } from 'react-icons/fa';
+import '../../../../styles/pages/_volemos-juntos.scss';
 
 const gruposDe = [
 	{
@@ -25,7 +26,7 @@ const VolemosJuntos = () => {
 	return (
 		<main className="volemosJuntos">
 			<section className="volemosJuntos__banner">
-				<Image src={banner} alt="banner" width={300} height={300} />
+				<Image src={banner} alt="banner" fill />
 			</section>
 
 			<section className="volemosJuntos__description">
@@ -40,36 +41,29 @@ const VolemosJuntos = () => {
 
 			<section className="volemosJuntos__propuesta">
 				<p>Si a partir de hoy y durante los próximos 5 años</p>
+				<FaArrowDown />
 				<div>
-					<Image src={iconomanos} alt="icono manos" width={100} height={100} />
 					<p> Te unes en grupos de</p>
 				</div>
-				<ul>
-					{gruposDe.map(({ id, grupos, mensual, semestral }) => (
-						<li key={id}>
-							<p>{grupos}</p>
+				<ul className="volemosJuntos__opciones">
+					{gruposDe.map(({ id, grupo, mensual, semestral }) => (
+						<li key={id} className="volemosJuntos__opcion">
+							<p className="volemosJuntos__grupo">{grupo}</p>
 							<p>y cada uno dona</p>
 							<p>${mensual}</p>
-							<p>Mensual</p>
+							<span>Mensual</span>
 							<p>${semestral}</p>
-							<p>Semestral</p>
+							<span>Semestral</span>
 						</li>
 					))}
 				</ul>
-				<div>
-					<Image src={iconodinero} alt="icono manos" width={100} height={100} />
+				<div className="volemosJuntos__unSoloPago">
 					<p>
 						O financias en un solo pago <span>$146.552.000</span>
 					</p>
 				</div>
-
-				<div>
-					<Image
-						src={iconopersona}
-						alt="icono manos"
-						width={250}
-						height={250}
-					/>
+				<FaArrowDown />
+				<div className="volemosJuntos__otorgar">
 					<p>
 						Otorgarías una <span>beca del 100%</span> a un joven talento que por
 						situaciones económicas no puede estudiar.
@@ -79,9 +73,10 @@ const VolemosJuntos = () => {
 
 			<section className="volemosJuntos__contacto">
 				<p>Si deseas más información o alguna asesoría, escríbenos:</p>
-				<p>
-					<FaEnvelope /> cfilantropia@eafit.edu.co
-				</p>
+				<div>
+					<FaEnvelope />
+					<span>cfilantropia@eafit.edu.co</span>
+				</div>
 			</section>
 		</main>
 	);
