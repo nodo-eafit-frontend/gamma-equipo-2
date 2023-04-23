@@ -1,27 +1,38 @@
-import React from "react";
+'use client';
+
+import React, { useState } from "react";
 import Image from "next/image";
-import Quetemotiva from "../../assets/donaciones/Quetemotiva.png";
+import quetemotiva from "../../assets/donaciones/Quetemotiva.png";
 import Link from "next/link";
-import styles from  "./FormDonaciones2.module.scss";
+import styles from  "./FormD.module.scss";
+import { Switch } from "antd";
+import { Checkbox } from "antd";
+
+
 
 export default function InformacionDeDonacion() {
 
-const { formdonaciones } = styles;
+const { formdonaciones, infodonaciones, image, formdonaciones__input, formdonaciones__group, recurrencia } = styles;
+
+const {toggle, seToggle} = useState(false);
+const toggler =() => {
+  toggle ? seToggle (false) : seToggle (true);
+}
 
   return (
-    <div>
-      <div>
+    <div className={formdonaciones}>
+      <div className={image}>
         <Image
-          src={Quetemotiva}
+          src={quetemotiva}
           alt="Que te motiva"
           quality={100}
         />
       </div>
-      <h1>Informacion de Donación</h1>
-      <form>
-        <div>
+      <h1 className={infodonaciones}>Informacion de Donación</h1>
+      <form className= {formdonaciones}>
+        <div className= {formdonaciones__group}>
           <label htmlFor="tipo-fondo">Fondo Donacion</label>
-          <select id="tipo-fondo">
+          <select id="tipo-fondo" className={formdonaciones__input}>
             <option></option>
             <option>CULTURA</option>
             <option>DEPORTE</option>
@@ -57,16 +68,15 @@ const { formdonaciones } = styles;
           type="text"
           placeholder="Valor a donar (Pesos Colombianos COP)"
         />
-
-        <div>
-          <label htmlFor="recurrencia">
-            Recurrecia
-            <span>Sí</span>
-            <span>No</span>
-          </label>
+        
+        
+        <div className={recurrencia}>
+            <p>Recurrecia</p>
+            <Switch onClick={toggler}/>
+            {toggle ?<span>Si!</span> : <span></span>}
         </div>
 
-        <div>
+        <div className={formdonaciones__input}>
           <label htmlFor="periodicidad">Periodicidad</label>
           <select id="periodicidad">
             <option></option>
@@ -80,16 +90,14 @@ const { formdonaciones } = styles;
             <option>G - Anual</option>
           </select>
         </div>
-
-        <input type="checkbox" />
+        <label>
+        <Checkbox />
         <Link
-          href="https://www.eafit.edu.co/institucional/centro-filantropia/Paginas/terminos-condiciones-uso-sitio-web-donaciones.aspx"
-          target="blank"
-        >
+          href="https://www.eafit.edu.co/institucional/centro-filantropia/Paginas/terminos-condiciones-uso-sitio-web-donaciones.aspx" target="_blank">
           Aceptar términos y condiciones
-        </Link>
-
-        <Link href="/" target="blank">
+        </Link> 
+        </label>
+        <Link href="/" target="_blank">
           Preguntas frecuentes
         </Link>
       </form>

@@ -26,6 +26,10 @@ const links = [
 		label: 'Certificados',
 		route: '/certificados',
 	},
+	{
+		label: 'Donar2',
+		route: 'donar2',
+	},
 ];
 
 const Navbar = ({ exceptionStyle }) => {
