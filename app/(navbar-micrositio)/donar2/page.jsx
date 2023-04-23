@@ -1,9 +1,11 @@
-import InformacionDeDonacion from '@/components/donar2/Form2';
+'use client'
+import InformacionDeDonacion from '@/components/donar2/FormDonacion2/InformacionDeDonacion';
 import React from 'react';
 
 
 
 const Donar2 = () => {
+
 	return (
 	<div>
 		<InformacionDeDonacion />

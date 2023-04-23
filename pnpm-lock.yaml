@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@paypal/react-paypal-js':
+    specifier: ^7.8.3
+    version: 7.8.3(react-dom@18.2.0)(react@18.2.0)
   antd:
     specifier: ^5.4.4
     version: 5.4.4(react-dom@18.2.0)(react@18.2.0)
@@ -330,6 +333,30 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
+
+  /@paypal/paypal-js@5.1.6:
+    resolution: {integrity: sha512-1upF06pv0AUtTftRVSra44p8ibqGa3ruKLArvdhpZla25zcrND7R+nDUIMrJ0iteVYZowhujZStFs6NoruExfg==}
+    dependencies:
+      promise-polyfill: 8.3.0
+    dev: false
+
+  /@paypal/react-paypal-js@7.8.3(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-7sD5JFA0IH9kysyGFv5DTmtPn54vLWZ0DLhdjUvsjqZnoEs11mJJJlTsTA7MkIO3jBAJOWlfoA4wLYzmy68C4g==}
+    peerDependencies:
+      react: '>=16.3.0'
+      react-dom: '>=16.3.0'
+    dependencies:
+      '@paypal/paypal-js': 5.1.6
+      '@paypal/sdk-constants': 1.0.130
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@paypal/sdk-constants@1.0.130:
+    resolution: {integrity: sha512-hrh1SyZy+qiBA+h/EYWjTZ7QiBcRgDiEfhHCxP47fiBO8wE9w+DiEfHm747vFQomvHg6AyDxhyGXjnuaGAW31A==}
+    dependencies:
+      hi-base32: 0.5.1
+    dev: false
 
   /@pkgr/utils@2.3.1:
     resolution: {integrity: sha512-wfzX8kc1PMyUILA+1Z/EqoE4UCXGy0iRGMhPwdfae1+f0OXlLqCk+By+aMzgJBzR9AzS4CDizioG6Ss1gvAFJw==}
@@ -1646,6 +1673,10 @@ packages:
     dependencies:
       function-bind: 1.1.1
 
+  /hi-base32@0.5.1:
+    resolution: {integrity: sha512-EmBBpvdYh/4XxsnUybsPag6VikPYnN30td+vQk+GI3qpahVEG9+gTkG0aXVxTjBqQ5T6ijbWIu77O+C5WFWsnA==}
+    dev: false
+
   /ignore@5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
     engines: {node: '>= 4'}
@@ -2234,6 +2265,10 @@ packages:
   /prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
+
+  /promise-polyfill@8.3.0:
+    resolution: {integrity: sha512-H5oELycFml5yto/atYqmjyigJoAo3+OXwolYiH7OfQuYlAqhxNvTfiNMbV9hsC6Yp83yE5r2KTVmtrG6R9i6Pg==}
+    dev: false
 
   /prop-types-extra@1.1.1(react@18.2.0):
     resolution: {integrity: sha512-59+AHNnHYCdiC+vMwY52WmvP5dM3QLeoumYuEyceQDi9aEhtwN9zIQ2ZNo25sMyXnbh32h+P1ezDsUpUH3JAew==}

@@ -1,7 +1,7 @@
 
 const Checkbox = () => {
     return (
-      <div className="checkbox-wrapper">
+      <div>
         <label>
           <input type="checkbox" />
         </label>
