@@ -7,17 +7,13 @@ import datosBeca from '../../../../assets/vamos-pa-lante/datosbeca.png';
 import organizadores from '@/data/iniciativas/vamos-pa-lante/organizadores';
 import universidadesSocias from '@/data/iniciativas/vamos-pa-lante/universidadesSocias';
 import aliados from '@/data/iniciativas/vamos-pa-lante/aliados';
+import '../../../../styles/pages/_vamos-pa-lante.scss';
 
 const VamosPaLante = () => {
 	return (
 		<main className="vamosPaLante">
 			<section className="vamosPaLante__banner">
-				<Image
-					src={banner.src}
-					alt="vamos pa lante imagen"
-					width={300}
-					height={300}
-				/>
+				<Image src={banner.src} alt="vamos pa lante imagen" fill />
 			</section>
 
 			<section className="vamosPaLante__ayudemos">
@@ -47,41 +43,47 @@ const VamosPaLante = () => {
 				<article className="vamosPaLante__organizadoresSociosAliados">
 					<div>
 						<h3>Organizadores</h3>
-						{organizadores.map(({ id, infoImg, alt }) => (
-							<Image
-								key={id}
-								src={infoImg}
-								alt={alt}
-								width={150}
-								height={150}
-							/>
-						))}
+						<div className="vamosPaLante__containerImages">
+							{organizadores.map(({ id, infoImg, alt }) => (
+								<Image
+									key={id}
+									src={infoImg}
+									alt={alt}
+									width={150}
+									height={150}
+								/>
+							))}
+						</div>
 					</div>
 
 					<div>
 						<h3>Universidades socias</h3>
-						{universidadesSocias.map(({ id, infoImg, alt }) => (
-							<Image
-								key={id}
-								src={infoImg}
-								alt={alt}
-								width={150}
-								height={150}
-							/>
-						))}
+						<div className="vamosPaLante__containerImages">
+							{universidadesSocias.map(({ id, infoImg, alt }) => (
+								<Image
+									key={id}
+									src={infoImg}
+									alt={alt}
+									width={150}
+									height={150}
+								/>
+							))}
+						</div>
 					</div>
 
 					<div>
 						<h3>Aliados</h3>
-						{aliados.map(({ id, infoImg, alt }) => (
-							<Image
-								key={id}
-								src={infoImg}
-								alt={alt}
-								width={150}
-								height={150}
-							/>
-						))}
+						<div className="vamosPaLante__containerImages">
+							{aliados.map(({ id, infoImg, alt }) => (
+								<Image
+									key={id}
+									src={infoImg}
+									alt={alt}
+									width={150}
+									height={150}
+								/>
+							))}
+						</div>
 					</div>
 				</article>
 
@@ -94,7 +96,9 @@ const VamosPaLante = () => {
 						width={300}
 						height={300}
 					/>
-					<span>+ sostenimiento semestral</span>
+					<span className="vamosPaLante__sostenimientoSemestral">
+						+ sostenimiento semestral
+					</span>
 				</article>
 
 				<article className="vamosPaLante__meta">
@@ -102,17 +106,20 @@ const VamosPaLante = () => {
 
 					<span>500 becas</span>
 
-					<span>$4.000.000.000</span>
+					<p>$4.000.000.000</p>
 				</article>
 
 				<Link
 					href="https://www.eafit.edu.co/institucional/centro-filantropia/campanias/Documents/VAMOS%20PALANTE-2022%20-%20EAFITDEFINITIVA.pdf"
 					className="vamosPaLante__button"
+					target="_blank"
 				>
 					Ingresa aquí y conoce más detalles
 				</Link>
-				<h3>Gracias</h3>
-				<p>Tu solidaridad nos inspira</p>
+				<div className="vamosPaLante__agradecimiento">
+					<h3>Gracias</h3>
+					<p>Tu solidaridad nos inspira</p>
+				</div>
 			</section>
 		</main>
 	);
