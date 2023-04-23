@@ -1,4 +1,4 @@
-const images = require.context('../assets/iniciativas', true);
+const images = require.context('../../assets/iniciativas', true);
 
 export const getAllImages = () => {
 	const keys = images.keys();
@@ -13,7 +13,7 @@ const iniciativas = [
 		id: 1,
 		infoImg: getAllImages()[0],
 		alt: 'Giving day image',
-		nameButton: '¡Conoce más!',
+		nameButton: '¡Contribuye!',
 		href: '/iniciativas/giving-day',
 	},
 	{
@@ -28,7 +28,7 @@ const iniciativas = [
 
 		infoImg: getAllImages()[2],
 		alt: "Vamos pa' lante image",
-		nameButton: '¡Ve más!',
+		nameButton: '¡Coopera!',
 		href: '/iniciativas/vamos-pa-lante',
 	},
 	{

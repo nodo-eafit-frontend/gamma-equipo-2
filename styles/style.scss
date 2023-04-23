@@ -1,5 +1,3 @@
-//@import 'bootstrap/dist/css/bootstrap.min.css';
-
 //UI settings
 @import './base/variables';
 @import './base/reset';
@@ -7,6 +5,15 @@
 //layouts
 @import './layouts/layoutPublico';
 
-// // //pages
+//pages
 
-// // //components
+//components
+/*
+@import './components/como-donar/comoDonar';
+@import './components/paginaCausas/header';
+@import './components/paginaCausas/flexbox';
+@import './components/paginaCausas/bloque';
+@import './components/paginaCausas/youtubeembed';
+@import './components/paginaCausas/playlist';
+@import './components/paginaCausas/videoCarousel';
+*/
