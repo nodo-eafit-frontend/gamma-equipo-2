@@ -1,0 +1,13 @@
+.inputEmail{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: $secundary-color;
+    border-color: black;
+    width: 30vh;
+    height: 5vh;
+    text-align: start;
+    font-size: $font-size-s;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

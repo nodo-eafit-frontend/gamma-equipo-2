@@ -1,11 +1,13 @@
 import React from 'react';
-import Carousel from './Carousel';
+import Carousel from './CarouselAutoSwitch';
+import infoCausas from '../../data/infoCarouselCausas';
+import '../../styles/components/paginaInicial/_nuestrasCausas.scss';
 
 const NuestrasCausas = () => {
 	return (
-		<div style={{ background: '#e9f8f9' }}>
-			<h2 style={{ textAlign: 'center' }}>Nuestras causas</h2>
-			<Carousel />
+		<div className="nuestrasCausas">
+			<h2 className="nuestrasCausas__title">Nuestras causas</h2>
+			<Carousel info={infoCausas} />
 		</div>
 	);
 };

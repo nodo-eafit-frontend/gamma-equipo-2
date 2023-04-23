@@ -55,7 +55,7 @@ devDependencies:
     specifier: 4.8.0
     version: 4.8.0(react@18.2.0)
   sass:
-    specifier: ^1.60.0
+    specifier: 1.60.0
     version: 1.60.0
   standard:
     specifier: 17.0.0

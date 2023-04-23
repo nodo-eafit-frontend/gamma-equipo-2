@@ -1,0 +1,90 @@
+@import "../../style.scss";
+.carouselAutoSwitch {
+	width: 100%;
+	margin: auto;
+	position: relative;
+	display: flex;
+	border: 2px solid $primary-color;
+	border-radius: 10px;
+	background-color: $light-color;
+	color: $dark-color;
+
+	&__card {
+		width: 90% !important;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		/* background-color: $dark-color;
+		color: $light-color; */
+
+		padding: 20px;
+	}
+
+	&__image {
+		object-fit: scale-down;
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+	}
+
+	&__containerText {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		margin: auto;
+		text-align: center;
+		padding: 10px 0;
+		font-weight: 500;
+		border-radius: 0 0 10px 10px;
+	}
+
+	&__title {
+		font-size: $font-size-sr;
+	}
+
+	&__button {
+		border-bottom: 2px solid $dark-color;
+
+		&:hover {
+			border-bottom: 2px solid $primary-color;
+			color: $primary-color;
+		}
+	}
+}
+
+@media (min-width: 500px) {
+	.carouselAutoSwitch {
+		width: 75% !important;
+		margin: 0 auto;
+
+		&__image {
+			margin: auto;
+			max-width: 70%;
+			height: auto;
+			object-fit: fill;
+		}
+
+		&__containerText {
+			max-width: 400px;
+			margin: 0;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.carouselAutoSwitch {
+		width: 50% !important;
+
+		&__card {
+			margin: 0 auto;
+		}
+
+
+		&__containerText {
+			padding-top: 0;
+		}
+	}
+}

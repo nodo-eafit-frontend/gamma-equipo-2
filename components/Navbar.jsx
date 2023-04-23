@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { MdClose, MdMenu } from 'react-icons/md';
+import '../styles/components/_navbar.scss';
 
 const links = [
 	{
@@ -24,14 +25,6 @@ const links = [
 	{
 		label: 'Certificados',
 		route: '/certificados',
-	},
-	{
-		label: 'Informes de gestión',
-		route: '/informes-de-gestion',
-	},
-	{
-		label: 'Noticias',
-		route: '/noticias',
 	},
 ];
 

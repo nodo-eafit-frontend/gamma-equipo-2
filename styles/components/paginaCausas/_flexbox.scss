@@ -4,8 +4,12 @@ $cols	: 12;
 $gap	: 0px;
 
 .container {
+<<<<<<< HEAD
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+=======
+	background-color: $light-color;
+>>>>>>> main
 	width: 100%;
 	justify-content: space-between;
 	margin: 0 auto;
