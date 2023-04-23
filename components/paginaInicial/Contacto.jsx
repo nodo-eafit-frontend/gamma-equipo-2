@@ -3,7 +3,8 @@ import React from 'react';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import Image from 'next/image';
-import infoContacto from '../../../data/infoContacto';
+import infoContacto from '../../data/infoContacto';
+import '../../styles/components/paginaInicial/_contacto.scss';
 
 const Contacto = () => {
 	const [sliderRef] = useKeenSlider(
@@ -22,7 +23,7 @@ const Contacto = () => {
 					if (mouseOver) return;
 					timeout = setTimeout(() => {
 						slider.next();
-					}, 2000);
+					}, 1000);
 				}
 				slider.on('created', () => {
 					slider.container.addEventListener('mouseover', () => {
@@ -55,18 +56,14 @@ const Contacto = () => {
 							height={200}
 						/>
 						<h3 className="contacto__name">{name}</h3>
-						<p className="contacto__info ">
+						<div className="contacto__info ">
 							{info.map((dato) => (
-								<>
-									<span>{dato}</span>
-								</>
+								<span key={dato}>{dato}</span>
 							))}
-						</p>
+						</div>
 						<p className="contacto__info contacto__info--color">
 							{email.map((dato) => (
-								<>
-									<span>{dato}</span>
-								</>
+								<span key={dato}>{dato}</span>
 							))}
 						</p>
 					</article>

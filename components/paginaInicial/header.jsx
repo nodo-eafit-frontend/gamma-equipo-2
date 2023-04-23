@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import Image from 'next/image';
 import imgHeader from '../../assets/paginaInicial/foto-estudiantes.png';
+import '../../styles/components/paginaInicial/_header.scss';
 
 const HeaderHome = () => {
 	useEffect(() => {
@@ -10,7 +11,9 @@ const HeaderHome = () => {
 			if (header && window.scrollY > 0) {
 				header.classList.add('header-home__title--scrolled');
 			} else {
-				header.classList.remove('header-home__title--scrolled');
+				if (header !== null) {
+					header.classList.remove('header-home__title--scrolled');
+				}
 			}
 		};
 

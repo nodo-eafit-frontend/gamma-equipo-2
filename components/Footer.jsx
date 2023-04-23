@@ -1,6 +1,7 @@
 import React from 'react';
 import imagenesAliados from '../data/dataImagenesAliados';
 import Image from 'next/image';
+import '../styles/components/_footer.scss';
 
 const Footer = () => {
 	//console.log(imagenesAliados);
