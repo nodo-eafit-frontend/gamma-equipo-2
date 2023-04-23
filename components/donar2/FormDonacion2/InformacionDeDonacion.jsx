@@ -90,10 +90,7 @@ const toggler =() => {
         </select>
       </div>
       </form>
-
-      <div>
-      <Botones />
-      </div>
+      
       <label>
         <Checkbox />
         <Link
@@ -104,6 +101,7 @@ const toggler =() => {
         <Link href="/" className={preguntasf}>
           Preguntas frecuentes
         </Link>
+        <Botones />
     </div>
   );
 }

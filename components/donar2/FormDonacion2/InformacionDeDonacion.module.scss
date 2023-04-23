@@ -15,9 +15,12 @@
   color: $dark-color;
   font-weight: 700;
 
+
   &__img {
     display: block;
-    width: 400px;
+    width: auto;
+    border-radius: 10px;
+    margin: 20px;
 
   }
 
@@ -30,7 +33,7 @@
     color:#fff;
     justify-content: center;
     text-align: center;
-    padding: 10px 10px;
+    padding: 10px;
     font-weight: bold;
     margin: 20px;
     border-radius: 10px;
