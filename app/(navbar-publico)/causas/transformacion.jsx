@@ -1,9 +1,10 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import imgTransf from '../../assets/paginaCausas/3transformacionHumanistica.jpg';
-import imgCultura from '../../assets/paginaCausas/6Cultura.png';
-import imgDeporte from '../../assets/paginaCausas/7Deporte.png';
+import imgTransf from '../../../assets/paginaCausas/3transformacionHumanistica.jpg';
+import imgCultura from '../../../assets/paginaCausas/6Cultura.png';
+import imgDeporte from '../../../assets/paginaCausas/7Deporte.png';
+import '../../../styles/components/paginaCausas/_flexbox.scss';
 
 const TransformacionH = () => {
     

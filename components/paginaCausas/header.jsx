@@ -1,5 +1,6 @@
 'use client';
 import React, { useEffect } from 'react';
+import '../../styles/components/paginaCausas/_header.scss';
 
 
 const HeaderCausas = () => {
