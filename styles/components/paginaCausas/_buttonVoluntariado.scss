@@ -1,0 +1,13 @@
+@import '/styles/style.scss';
+
+.buttonVoluntariado {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	position: relative;
+	transform: translate(50%,0);
+	padding: 0.5rem;
+	border-radius: 5px;
+	background-color: $primary-color;
+	top: 10px;
+}

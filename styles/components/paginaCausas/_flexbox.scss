@@ -1,18 +1,22 @@
+@import '../../style.scss';
+
 $cols	: 12;
 $gap	: 0px;
 
 .container {
-	background-color: $light-color;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	width: 100%;
 	justify-content: space-between;
 	margin: 0 auto;
 	//padding-left: $gap/2;
 	//padding-right: $gap/2;
-	display: flex;
-	flex-wrap: wrap;
+	//display: flex;
+	//flex-wrap: wrap;
 	padding-bottom: 2rem;
 	padding-left: 5rem;
 	padding-right: 5rem;
+	//background-color: $light-color;
 
 	&__fondo{
 		background-color: #dffdff;
@@ -41,8 +45,10 @@ $gap	: 0px;
 	max-width: 100%;
 	//padding-left: $gap/2;
 	//padding-right: $gap/2;
-	flex: 1 0 0;
 	display: flex;
+	flex-wrap: wrap;
+	flex: 1 0 0;
+	
 
 	padding-top: 1rem;
 	padding-bottom: 1rem;
@@ -94,24 +100,26 @@ $gap	: 0px;
 	}
 }
 
-/* @media (min-width: 768px) {
+/* @media (max-width: 768px) {
 	.container{
 		justify-content: center;
+		width: 50%;
+		//display: contents;
 	}
 	
 	.col {
 		&__title {
 			font-size: $font-size-m;
-			font-weight: 500;
+			font-weight: 300;
 		}
-		&__title {
+		&__subtitle {
 			font-size: $font-size-m;
-			font-weight: 460;
+			font-weight: 260;
 		}
 	}
-}
+} */
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
 	
 	.col {
 		&__title {

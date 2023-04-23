@@ -1,13 +1,13 @@
 import HeaderHome from '@/components/paginaInicial/header';
-import { SimpleCard } from '@/components/paginaInicial/Card';
-import NuestrasCausas from '@/components/paginaInicial/NuestrasCausas';
-import infoFilantropia from '/data/infoPaginaInicialFilantropia';
+//import { SimpleCard } from '@/components/paginaInicial/Card';
+//import NuestrasCausas from '@/components/paginaInicial/NuestrasCausas';
+//import infoFilantropia from '/data/infoPaginaInicialFilantropia';
 
 export default function Home() {
 	return (
 		<>
 			<HeaderHome />
-			<main>
+			{/* <main>
 				<section
 					className="info-filantropia"
 					style={{
@@ -62,7 +62,7 @@ export default function Home() {
 					natus nisi sapiente a accusantium tempore sit quam obcaecati iusto
 					dolorem?
 				</p>
-			</main>
+			</main> */}
 		</>
 	);
 }
