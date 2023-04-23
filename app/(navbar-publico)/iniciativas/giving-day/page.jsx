@@ -5,6 +5,7 @@ import { FaMoneyBill, FaHandsHelping, FaHeart } from 'react-icons/fa';
 import restaurantesYMarcasEnEafit from '@/data/iniciativas/giving-day/restaurantesYMarcasEnEafit';
 import restaurantesYMarcasFueraEafit from '@/data/iniciativas/giving-day/restaurantesYMarcasFueraEafit';
 import patrocinadores from '@/data/iniciativas/giving-day/patrocinadores';
+import '../../../../styles/pages/_giving-day.scss';
 
 const cardHeaderInfo = [
 	{
@@ -27,7 +28,7 @@ const cardHeaderInfo = [
 const GivingDay = () => {
 	return (
 		<main className="givingDay">
-			<section className="givingDay__header">
+			<header className="givingDay__header">
 				<article className="givingDay__row1Header">
 					<h2 className="givingDay__title">
 						#Volemos Juntos <span>eafit</span>
@@ -49,7 +50,7 @@ const GivingDay = () => {
 						</article>
 					))}
 				</article>
-			</section>
+			</header>
 
 			<section className="givingDay__info">
 				<p>
@@ -62,7 +63,6 @@ const GivingDay = () => {
 					height="315"
 					src="https://www.youtube.com/embed/NpUUfkPnwzQ"
 					title="YouTube video player"
-					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					allowfullscreen
 				></iframe>
@@ -70,33 +70,52 @@ const GivingDay = () => {
 
 			<section className="givingDay__aliados">
 				<h2 className="givingDay__titleAliados">Aliados</h2>
-
-				<article className="givingDay__marcasEnEafit">
-					<h3>Restaurantes y marcas en EAFIT:</h3>
-					{restaurantesYMarcasEnEafit.map(({ id, infoImg, alt }) => (
-						<div key={id}>
-							<Image src={infoImg.src} alt={alt} width={150} height={150} />
+				<div className="givingDay__containerAliados">
+					<article className="givingDay__marcasEnEafit">
+						<h3>Restaurantes y marcas en EAFIT:</h3>
+						<div className="givingDay__containerImagenes">
+							{restaurantesYMarcasEnEafit.map(({ id, infoImg, alt }) => (
+								<Image
+									key={id}
+									src={infoImg.src}
+									alt={alt}
+									width={150}
+									height={150}
+								/>
+							))}
 						</div>
-					))}
-				</article>
+					</article>
 
-				<article className="givingDay__marcasFueraEafit">
-					<h3>Restaurantes y marcas fuera de EAFIT:</h3>
-					{restaurantesYMarcasFueraEafit.map(({ id, infoImg, alt }) => (
-						<div key={id}>
-							<Image src={infoImg.src} alt={alt} width={150} height={150} />
+					<article className="givingDay__marcasFueraEafit">
+						<h3>Restaurantes y marcas fuera de EAFIT:</h3>
+						<div className="givingDay__containerImagenes">
+							{restaurantesYMarcasFueraEafit.map(({ id, infoImg, alt }) => (
+								<Image
+									key={id}
+									src={infoImg.src}
+									alt={alt}
+									width={150}
+									height={150}
+								/>
+							))}
 						</div>
-					))}
-				</article>
+					</article>
 
-				<article className="givingDay__patrocinadores">
-					<h3>Patrocinadores</h3>
-					{patrocinadores.map(({ id, infoImg, alt }) => (
-						<div key={id}>
-							<Image src={infoImg.src} alt={alt} width={150} height={150} />
+					<article className="givingDay__patrocinadores">
+						<h3>Patrocinadores</h3>
+						<div className="givingDay__containerImagenes">
+							{patrocinadores.map(({ id, infoImg, alt }) => (
+								<Image
+									key={id}
+									src={infoImg.src}
+									alt={alt}
+									width={150}
+									height={150}
+								/>
+							))}
 						</div>
-					))}
-				</article>
+					</article>
+				</div>
 			</section>
 		</main>
 	);

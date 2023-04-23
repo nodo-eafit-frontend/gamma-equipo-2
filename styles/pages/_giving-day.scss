@@ -1,0 +1,115 @@
+@import '../style.scss';
+
+.givingDay {
+	background-color: $primary-color;
+	color: $light-color;
+
+	//header
+	&__header {
+		background-color: $primary-color;
+		padding: 15px 0;
+	}
+
+	&__title {
+		color: $light-color;
+		text-align: center;
+		font-size: $font-size-lr;
+		font-weight: 800;
+	}
+
+	&__title > span {
+		text-transform: uppercase;
+	}
+
+	&__imagenHeader {
+		margin: 0 auto;
+		max-width: 300px;
+		height: auto;
+	}
+
+	&__row2Header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 10px;
+		padding: 15px 0;
+	}
+
+	&__cardHeader {
+		text-align: center;
+		background-color: $dark-color;
+		color: $light-color;
+		padding: 15px;
+		min-width: 350px;
+		max-width: 350px;
+		border-radius: 15px;
+
+		height: 100px;
+	}
+
+	//info
+	&__info {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
+		font-size: $font-size-s;
+		padding: 20px 0;
+	}
+
+	&__info > p {
+		text-align: center;
+		padding: 10px;
+		max-width: 450px;
+	}
+
+	&__info > iframe {
+		width: 560px;
+		height: 315px;
+	}
+
+	//aliados
+	&__aliados {
+		background-color: $primary-color;
+	}
+
+	&__titleAliados {
+		text-align: center;
+		color: $light-color;
+		font-size: $font-size-l;
+		font-weight: 700;
+		padding: 10px 0;
+	}
+
+	&__containerAliados {
+		background-color: $primary-color;
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		gap: 50px;
+	}
+
+	&__aliados article {
+		text-align: center;
+		color: $light-color;
+		font-size: $font-size-m;
+		font-weight: 500;
+		padding: 15px 0;
+		max-width: 370px;
+	}
+
+	&__aliados img {
+		max-width: 150px;
+	}
+
+	&__containerImagenes {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+}
