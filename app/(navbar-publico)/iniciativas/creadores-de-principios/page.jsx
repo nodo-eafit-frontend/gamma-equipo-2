@@ -6,6 +6,7 @@ import 'keen-slider/keen-slider.min.css';
 import banner1 from '../../../../assets/creadores-de-principios/banner (1).jpg';
 import banner2 from '../../../../assets/creadores-de-principios/banner (2).jpg';
 import fondoBecaRescate from '../../../../assets/creadores-de-principios/imagen_2020-10-01_125623.png';
+import '../../../../styles/pages/_creadores-de-principios.scss';
 
 const CreadoresDePrincipios = () => {
 	const [sliderRef] = useKeenSlider(
@@ -51,26 +52,20 @@ const CreadoresDePrincipios = () => {
 				className="keen-slider creadoresPrincipios__carousel"
 				style={{ width: '100%' }}
 			>
-				<div
-					className="keen-slider__slide creadoresPrincipios__card"
-					style={{ width: '100%' }}
-				>
+				<div className="keen-slider__slide creadoresPrincipios__card">
 					<Image
 						src={banner1}
-						alt="a"
+						alt="banner 1"
 						fill
 						className="creadoresPrincipios__banner"
 					/>
 				</div>
-				<div
-					className="keen-slider__slide creadoresPrincipios__card"
-					style={{ width: '100%' }}
-				>
+
+				<div className="keen-slider__slide creadoresPrincipios__card">
 					<Image
 						src={banner2}
-						alt="a"
-						width={300}
-						height={300}
+						alt="banner 2"
+						fill
 						className="creadoresPrincipios__banner"
 					/>
 				</div>
@@ -87,9 +82,9 @@ const CreadoresDePrincipios = () => {
 				<p>Tú también puedes ser un creador de principios, aportando al</p>
 				<Image
 					src={fondoBecaRescate}
-					alt="a"
-					width={300}
-					height={300}
+					alt="fondo beca rescate imagen"
+					width={250}
+					height={250}
 					className="creadoresPrincipios__imgFondoBeca"
 				/>
 				<p>
