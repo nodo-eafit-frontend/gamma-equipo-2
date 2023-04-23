@@ -1,8 +1,9 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import imgVoluntariado from '../../assets/paginaCausas/4Inspiracion-voluntariado.jpg'
-import ButtonVoluntariado from './ButtonVoluntariado';
+import imgVoluntariado from '../../../assets/paginaCausas/4Inspiracion-voluntariado.jpg'
+import ButtonVoluntariado from '@/components/paginaCausas/ButtonVoluntariado';
+import '../../../styles/components/paginaCausas/_flexbox.scss';
 
 const Voluntariado = () => {
     

@@ -1,4 +1,5 @@
 import React from "react";
+import '../../styles/components/paginaCausas/_playlist.scss';
 
 const PlaylistEmbed = ({ playlistId }) => (
     <div className="playlist-wrapper">

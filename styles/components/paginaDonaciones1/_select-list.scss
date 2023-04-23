@@ -1,0 +1,12 @@
+.selectList {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: $secundary-color;
+    width: 30vh;
+    height: 5vh;
+    text-align: center;
+    font-size: $font-size-s;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

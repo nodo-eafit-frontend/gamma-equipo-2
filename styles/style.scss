@@ -1,11 +1,14 @@
-//@import 'bootstrap/dist/css/bootstrap.min.css';
-
 //UI settings
 @import './base/variables';
 @import './base/reset';
 
-//components
+//layouts
+@import './layouts/layoutPublico';
 
+//pages
+
+//components
+/*
 @import './components/como-donar/comoDonar';
 @import './components/paginaCausas/header';
 @import './components/paginaCausas/flexbox';
@@ -13,4 +16,8 @@
 @import './components/paginaCausas/youtubeembed';
 @import './components/paginaCausas/playlist';
 @import './components/paginaCausas/videoCarousel';
+<<<<<<< HEAD
 
+=======
+*/
+>>>>>>> a0dd1f7494433c244cda25046ba62c31431e029d

@@ -1,9 +1,8 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import imgCiencia from '../../assets/paginaCausas/2CienciaTecnologiaEInnovacion.jpg';
-import YoutubeEmbed from './YoutubeEmbed';
-
+import imgCiencia from '../../../assets/paginaCausas/2CienciaTecnologiaEInnovacion.jpg';
+import '../../../styles/components/paginaCausas/_flexbox.scss';
 
 const CienciaTec = () => {
     
@@ -39,7 +38,7 @@ const CienciaTec = () => {
                         </p>                        
                     </div>
                 </div>
-                <YoutubeEmbed embedId="9AfH9ZEb-18" />
+                {/* <YoutubeEmbed embedId="9AfH9ZEb-18" /> */}
                                
             </div>             
       </section>

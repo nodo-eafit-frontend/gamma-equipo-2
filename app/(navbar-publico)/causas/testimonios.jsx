@@ -1,5 +1,5 @@
 'use client';
-import React from "react";
+/* import React from "react";
 import VideoCarousel from "@/components/paginaCausas/VideoCarousel";
 import { infoTestimonios } from "@/data/causas/videos";
 import PlaylistEmbed from "@/components/paginaCausas/Playlist";
@@ -11,11 +11,35 @@ const Testimonios = () => (
     </div>
   );
   
-  export default Testimonios;
+  export default Testimonios; */
+
+
+
+  import React from "react";
+  import CardGrid from "../../../components/paginaCausas/CardGrid";
+  import infoTestimonios from "@/data/causas/videos";
+  
+  const Videos = () => {
+    const videos = infoTestimonios;
+  
+    return (
+      <div>
+        <h1 className="col__subtitle">Testimonios<br/></h1>
+        <CardGrid videos={videos} />
+      </div>
+    );
+  };
+  
+  export default Videos;
+
+
+
+
+
 
 /* const Testimonios = () => {
-    const videos = obtenerVideos();
-    const videoIds = videos.map((video) => video.id);
+    const videos = infoTestimonios();
+    const videoIds = videos.map((videos) => videos.id);
 
   return (
     <div>
