@@ -1,0 +1,20 @@
+
+$mobile-breakpoint: 768px;
+
+.playlist-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
+    height: 500px;
+  
+    @media (max-width: $mobile-breakpoint) {
+      max-width: 100%;
+      height: 150px;
+    }
+  
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }

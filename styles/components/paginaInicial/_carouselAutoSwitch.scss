@@ -1,8 +1,13 @@
-.carouselCausas {
+@import "../../style.scss";
+.carouselAutoSwitch {
 	width: 100%;
 	margin: auto;
 	position: relative;
 	display: flex;
+	border: 2px solid $primary-color;
+	border-radius: 10px;
+	background-color: $light-color;
+	color: $dark-color;
 
 	&__card {
 		width: 90% !important;
@@ -10,8 +15,9 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		background-color: rgba($color: $dark-color, $alpha: 1);
-		color: $light-color;
+		/* background-color: $dark-color;
+		color: $light-color; */
+
 		padding: 20px;
 	}
 
@@ -40,7 +46,7 @@
 	}
 
 	&__button {
-		border-bottom: 2px solid $light-color;
+		border-bottom: 2px solid $dark-color;
 
 		&:hover {
 			border-bottom: 2px solid $primary-color;
@@ -50,11 +56,15 @@
 }
 
 @media (min-width: 500px) {
-	.carouselCausas {
+	.carouselAutoSwitch {
+		width: 75% !important;
+		margin: 0 auto;
+
 		&__image {
 			margin: auto;
-			max-width: 500px;
+			max-width: 70%;
 			height: auto;
+			object-fit: fill;
 		}
 
 		&__containerText {
@@ -65,22 +75,15 @@
 }
 
 @media (min-width: 1024px) {
-	.carouselCausas {
-		width: 70% !important;
-		margin: 0 auto;
+	.carouselAutoSwitch {
+		width: 50% !important;
 
 		&__card {
 			margin: 0 auto;
 		}
 
-		&__image {
-			width: 600px;
-			height: auto;
-			margin: auto;
-		}
 
 		&__containerText {
-			max-width: 400px;
 			padding-top: 0;
 		}
 	}

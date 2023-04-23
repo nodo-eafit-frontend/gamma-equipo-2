@@ -1,0 +1,130 @@
+$cols	: 12;
+$gap	: 0px;
+
+.container {
+	background-color: $light-color;
+	width: 100%;
+	justify-content: space-between;
+	margin: 0 auto;
+	//padding-left: $gap/2;
+	//padding-right: $gap/2;
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 2rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+
+	&__fondo{
+		background-color: #dffdff;
+		max-width: fit-content;
+		display: flex;
+		flex-wrap: wrap;
+		
+	}
+
+} 
+
+/* [class*="col-"],
+.col{
+	width: 100%;
+	max-width: 100%;
+	//padding-left: $gap/2;
+	//padding-right: $gap/2;
+	flex: 1 0 0;
+	display: flex;
+} */
+
+
+
+.col{
+	width: 100%;
+	max-width: 100%;
+	//padding-left: $gap/2;
+	//padding-right: $gap/2;
+	flex: 1 0 0;
+	display: flex;
+
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	display: grid;
+	text-align: justify;
+
+	&__image {
+		width: 60%;
+		max-width: 300px;
+		height: fit-content;
+		margin: auto;
+		border-radius: 15px;
+		object-fit: contain;
+	}
+
+	&__title{
+		position: absolute;
+		transform: translate(56%, -40%);
+		text-align: center;
+		font-size: $font-size-m;
+		font-weight: bolder;
+		width: 80%;
+		max-width: 300px;
+		margin: 0 auto;
+		background-color: $secundary-color;
+		color: $dark-color;
+		border-radius: 5px;
+
+	}
+	&__subtitle{
+		text-align: center;
+		font-size: $font-size-m;
+		font-weight: 570;
+		width: 50%;
+		max-width: 1000px;
+		margin: 0 auto;
+		color: $dark-color;
+	}
+
+	&__sub{
+		position: relative;
+		transform: translate(-50%, 0%);
+		font-size: $font-size-s;
+		font-weight: 600;
+		width: 50%;
+		max-width: 600px;
+		margin: 0 auto;
+		color: $primary-color;
+	}
+}
+
+/* @media (min-width: 768px) {
+	.container{
+		justify-content: center;
+	}
+	
+	.col {
+		&__title {
+			font-size: $font-size-m;
+			font-weight: 500;
+		}
+		&__title {
+			font-size: $font-size-m;
+			font-weight: 460;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	
+	.col {
+		&__title {
+			position: absolute;
+			transform: translate(56%, -40%);
+			font-size: $font-size-m;
+			font-weight: 600;
+			max-width: 300px;
+		}
+		&__subtitle {
+			font-size: $font-size-m;
+			font-weight: 570;
+			max-width: 300px;
+		}
+	}
+}  */

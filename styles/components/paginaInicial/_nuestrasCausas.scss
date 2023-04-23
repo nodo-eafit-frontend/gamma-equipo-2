@@ -1,0 +1,16 @@
+@import "../../style.scss";
+
+.nuestrasCausas {
+	text-align: center;
+	padding: 20px 0;
+	/* background-color: $dark-color;
+	color: $light-color; */
+	background-color: $light-color;
+	color: $dark-color;
+
+	&__title {
+		font-size: $font-size-l;
+		font-weight: 600;
+		padding: 10px 0;
+	}
+}

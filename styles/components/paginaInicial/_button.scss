@@ -1,3 +1,5 @@
+@import "../../style.scss";
+
 .buttonDonar {
 	display: flex;
 	justify-content: flex-end;
@@ -18,6 +20,18 @@
 			transform: scale(1.03);
 		}
 	}
+}
+
+.buttonVoluntariado {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	position: relative;
+	transform: translate(50%,0);
+	padding: 0.5rem;
+	border-radius: 5px;
+	background-color: $primary-color;
+	top: 10px;
 }
 
 @keyframes cambio_color {

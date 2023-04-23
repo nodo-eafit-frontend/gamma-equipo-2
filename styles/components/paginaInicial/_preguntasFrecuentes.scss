@@ -1,0 +1,14 @@
+@import '../../style.scss';
+
+.preguntasFrecuentes {
+	padding: 10px;
+	&__title {
+		font-size: $font-size-l;
+		font-weight: 600;
+		text-align: center;
+	}
+
+	&__preguntas {
+		padding: 10px;
+	}
+}

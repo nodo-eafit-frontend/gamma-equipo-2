@@ -1,0 +1,11 @@
+@import "../../../styles/base/variables"; 
+
+
+.descargar {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: $font-secondary;
+    font-size: $font-size-s;
+    padding: 10px;
+}

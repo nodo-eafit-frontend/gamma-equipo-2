@@ -4,6 +4,7 @@
 @import './base/variables';
 @import './base/reset';
 
+
 //layouts
 @import './layouts/layoutPublico';
 
@@ -24,4 +25,15 @@
 @import './components/paginaDonaciones1/select-list';
 @import './components/paginaDonaciones1/input-number';
 @import './components/paginaDonaciones1/input-email';
-@import './components/paginaDonaciones1/content-donacion'
+@import './components/paginaDonaciones1/content-donacion';
+
+//components
+
+@import './components/como-donar/comoDonar';
+@import './components/paginaCausas/header';
+@import './components/paginaCausas/flexbox';
+@import './components/paginaCausas/bloque';
+@import './components/paginaCausas/youtubeembed';
+@import './components/paginaCausas/playlist';
+@import './components/paginaCausas/videoCarousel';
+
