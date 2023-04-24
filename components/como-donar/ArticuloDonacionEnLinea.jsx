@@ -1,6 +1,7 @@
 import React from 'react'
 import imgDonacionLinea from '../../assets/como-donar/donacionlinea.png';
 import Image from 'next/image';
+import '../../styles/components/como-donar/comoDonar.scss';
 
 export default function ArticuloDonacionEnLinea() {
   return (
