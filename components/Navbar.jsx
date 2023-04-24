@@ -47,7 +47,9 @@ const Navbar = ({ exceptionStyle }) => {
 			if (navbar && window.scrollY > 0) {
 				navbar.classList.add('navbar--scrolled');
 			} else {
-				navbar.classList.remove('navbar--scrolled');
+				if (navbar.classList) {
+					navbar.classList.remove('navbar--scrolled');
+				}
 			}
 		};
 
