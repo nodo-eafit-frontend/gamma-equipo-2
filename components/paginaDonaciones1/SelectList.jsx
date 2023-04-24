@@ -1,5 +1,5 @@
-import React from 'react';
-import '../../styles/components/paginaDonaciones1/_select-list.scss';
+import React from "react";
+import "../../styles/components/paginaDonaciones1/_select-list.scss";
 
 export function SelectList(props) {
   let options = [];
@@ -11,12 +11,14 @@ export function SelectList(props) {
     <div>
       <label htmlFor={props.id}>{props.label}</label>
       <select
-        className='selectList'
+        className="selectList"
         id={props.id}
         value={props.value}
         onChange={props.onChange}
-        
       >
+        <option value="" disabled selected>
+          {props.placeholder}
+        </option>
         {options.map((option) => (
           <option value={option.value} key={option.value}>
             {option.label}
