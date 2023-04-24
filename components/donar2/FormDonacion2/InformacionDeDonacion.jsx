@@ -98,7 +98,7 @@ const toggler =() => {
           Aceptar términos y condiciones
         </Link> 
         </label> <br />
-        <Link href="/" className={preguntasf}>
+        <Link href="/" className={preguntasf} target="_blank">
           Preguntas frecuentes
         </Link>
         <Botones />
