@@ -1,10 +1,10 @@
 import HeaderCausas from '@/components/paginaCausas/header';
-import CienciaTec from '@/components/paginaCausas/ciencia';
-import TransformacionH from '@/components/paginaCausas/transformacion';
-import Voluntariado from '@/components/paginaCausas/voluntariado';
-import EquidadSocial from '@/components/paginaCausas/equidad';
-import Testimonios from './testimonios';
-// import {HeaderCausas, CienciaTec, TransformacionH, Voluntariado, EquidadSocial} from '@/components';
+import EquidadSocial from './secciones/equidad';
+import CienciaTec from './secciones/ciencia';
+import TransformacionH from './secciones/transformacion';
+import Voluntariado from './secciones/voluntariado';
+import Videos from './secciones/testimonios';
+import '../../../styles/components/paginaCausas/_bloque.scss';
 
 export default function Causas() {
 	return (
@@ -26,7 +26,9 @@ export default function Causas() {
 					<Voluntariado />
 					<div className='linea'></div>
 
-					<Testimonios/>
+					<Videos/>
+
+					{/* <Testimonios/> */}
 					<div className='linea'></div>
 
 				</section>			

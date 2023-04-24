@@ -1,0 +1,29 @@
+@import '../../style.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+.buttonSiguiente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    border-radius: 10px;
+    width: 19vh;
+    height: 5vh;
+    font-size: $font-size-s;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 400;
+    margin: 4rem;
+
+    &:hover {
+        background-color: #230ec2;
+        cursor: pointer;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 0.2rem rgba(6, 58, 111, 0.5);
+    }
+
+}    

@@ -15,7 +15,7 @@ const infoCausas = [
 		infoImg: getAllImages()[0],
 		alt: 'imagen Equidad Social e inclusión',
 		nameButton: 'Ver más',
-		href: '',
+		href: '/causas',
 	},
 	{
 		id: 2,
@@ -23,7 +23,7 @@ const infoCausas = [
 		infoImg: getAllImages()[1],
 		alt: 'imagen Ciencia, tecnología e innovación',
 		nameButton: 'Ver más',
-		href: '',
+		href: '/causas',
 	},
 	{
 		id: 3,
@@ -31,7 +31,7 @@ const infoCausas = [
 		infoImg: getAllImages()[2],
 		alt: 'imagen Transformación humanista',
 		nameButton: 'Ver más',
-		href: '',
+		href: '/causas',
 	},
 	{
 		id: 4,
@@ -39,7 +39,7 @@ const infoCausas = [
 		infoImg: getAllImages()[3],
 		alt: 'imagen Inspiración - Voluntariado',
 		nameButton: 'Ver más',
-		href: '',
+		href: '/causas',
 	},
 ];
 /* 

@@ -1,0 +1,66 @@
+@import '../../style.scss';
+
+.contentDonacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    &--1 {
+      margin-right: 7rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    &--2 {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__column {
+    display: flex;
+
+    &--1 {
+      margin-right: 7rem;
+      margin-top: 2rem;
+    }
+
+    &--2 {
+      margin-top: 2rem;
+    }
+  }
+
+  &__column2 {
+    display: flex;
+
+    &--1 {
+      margin-right: 7rem;
+      margin-top: 2rem;
+    }
+
+    &--2 {
+      margin-top: 2rem;
+    }
+  }
+
+  &__column3 {
+    display: flex;
+
+    &--1 {
+      margin-right: 7rem;
+      margin-top: 2rem;
+    }
+
+    &--2 {
+      margin-top: 2rem;
+    }
+  }
+}

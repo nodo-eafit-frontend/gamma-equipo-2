@@ -1,3 +1,5 @@
+@import '../../style.scss';
+
 .header-causas {
 	display: flex;
 	justify-content: center;
@@ -47,6 +49,10 @@
 
 @media (min-width: 768px) {
 	.header-causas {
+		&__image {
+			width: 70%;
+			height: fit-content;
+		}
 		&__title {
 			font-size: $font-size-l;
 			font-weight: 500;

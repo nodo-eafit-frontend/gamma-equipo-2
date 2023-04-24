@@ -1,0 +1,14 @@
+@import '/styles/style.scss';
+
+.buttonConoce {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	position: relative;
+	transform: translate(50%,0);
+	padding: 0.5rem;
+	border-radius: 5px;
+	background-color: $secundary-color;
+	top: 10px;
+    font-weight: 700;
+}

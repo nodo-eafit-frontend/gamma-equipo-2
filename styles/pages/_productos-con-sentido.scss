@@ -1,0 +1,178 @@
+@import '../style.scss';
+
+.productosConSentido {
+	text-align: center;
+
+	& img {
+		object-fit: scale-down;
+	}
+
+	& svg {
+		display: block;
+		width: 20px;
+	}
+
+	&__banner {
+		width: 100%;
+		height: 150px;
+		position: relative;
+	}
+
+	&__banner img {
+		width: 100%;
+		height: 100%;
+		object-fit: scale-down;
+	}
+
+	&__header {
+		padding: 10px;
+		max-width: 650px;
+		margin: 0 auto;
+	}
+
+	&__header h1 {
+		font-size: $font-size-l;
+		font-weight: 800;
+	}
+
+	&__header p {
+		text-align: center;
+		font-size: $font-size-m;
+		font-weight: 400;
+	}
+
+	&__principal {
+		background-color: $primary-color;
+		padding: 30px 10px;
+	}
+
+	&__principal h2 {
+		font-size: $font-size-m;
+		font-weight: 600;
+		color: $light-color;
+	}
+
+	&__productos {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 50px;
+	}
+
+	&__producto {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 400px;
+		margin: 0 auto;
+	}
+
+	&__producto img {
+		width: 200px;
+		height: 250px;
+		object-fit: scale-down;
+	}
+
+	&__producto span {
+		background-color: $light-color;
+		color: $dark-color;
+		padding: 5px 10px;
+		border-radius: 15px;
+	}
+
+	&__adquerirProds {
+		padding: 30px 0;
+		color: $light-color;
+	}
+
+	&adquerirProds h2 {
+		padding: 20px 0;
+	}
+
+	&__adquerirProds img {
+		height: 250px;
+	}
+
+	&__containerTexto {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
+	}
+
+	&__adquerirLibros {
+		color: $light-color;
+		padding: 20px 0;
+	}
+
+	&__adquerirLibros h2 {
+		padding: 20px 0;
+	}
+
+	&__adquerirLibros > span {
+		background-color: $light-color;
+		color: $dark-color;
+		padding: 5px 10px;
+		border-radius: 15px;
+	}
+
+	&__contacto {
+		text-align: center;
+		padding: 20px 0;
+	}
+
+	&__contacto h2 {
+		font-size: $font-size-l;
+		font-weight: 800;
+		text-align: center;
+	}
+
+	&__contacto h3 {
+		font-size: $font-size-s;
+		font-weight: 600;
+		text-align: center;
+	}
+
+	&__contacto h4 {
+		font-size: $font-size-s;
+		font-weight: 500;
+		text-align: center;
+	}
+
+	&__contacto > div {
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		padding: 10px;
+	}
+
+	&__contactoProds,
+	&__contactoLibros {
+		padding: 10px;
+		max-width: 450px;
+	}
+
+	&__contactoProds > div,
+	&__contactoLibros > div {
+		padding: 10px;
+	}
+}
+
+@media (min-width: 768px) {
+	.productosConSentido {
+		&__banner {
+			height: 300px;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.productosConSentido {
+		&__banner {
+			height: 450px;
+		}
+	}
+}

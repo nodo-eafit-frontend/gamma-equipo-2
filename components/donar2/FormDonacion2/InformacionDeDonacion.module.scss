@@ -1,0 +1,85 @@
+@import "../../../styles/base/variables";
+
+
+.formdonaciones {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: $font-tertiary;
+  font-size: $font-size-sr;
+  background-color: $light-color;
+  padding: 50px 0px;
+  color: $dark-color;
+  font-weight: 700;
+
+
+  &__img {
+    display: block;
+    width: auto;
+    width: 550px;
+    border-radius: 10px;
+    margin: 20px;
+
+  }
+
+
+  &__infodonaciones {
+    font-family: $font-primary;
+    font-size: $font-size-m;
+    display: flex;
+    background-color: $dark-color;
+    color:#fff;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    margin: 20px;
+    border-radius: 10px;
+  }
+
+  &__group {
+    width: 70%;
+    margin-bottom: 40px;
+    font-weight: 700;
+    height: 70px;
+  }
+
+  &__input {
+    display: inline;
+    width: 30%;
+    margin: 0.5rem 0;
+    font-size: $font-size-sr;
+    background-color: $secundary-color;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    appearance: auto;
+    color: $dark-color;
+  }
+}
+
+.recurrencia {
+  display: block;
+ 
+}
+
+.terminosyc {
+  color: blue;
+  font-size: $font-size-xs;
+  
+  &:hover {
+    text-decoration-line:underline;
+  }
+}
+
+.preguntasf {
+  color: blue;
+  font-size: $font-size-xs;
+  
+  &:hover {
+    text-decoration-line:underline;
+  }
+}

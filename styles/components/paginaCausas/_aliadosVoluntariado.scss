@@ -1,0 +1,53 @@
+@import '../../style.scss';
+
+.footerVol {
+    padding: 15px 0;
+
+    &__title {
+		text-align: center;
+		padding: 10px;
+		font-size: $font-size-m;
+		font-weight: 500;
+	}
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 20px;
+		max-width: 1000px;
+		margin: auto;
+	}
+
+	&__image {
+		max-width: 200px;
+		height: auto;
+		padding: 10px;
+	}
+}
+
+@media (min-width: 768px) {
+	.footerVol {
+		padding: 10px 0;
+
+		&__title {
+			text-align: center;
+			padding: 10px;
+			font-size: $font-size-m;
+			font-weight: 500;
+		}
+		&__container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+
+		&__image {
+			max-width: 150px;
+			height: auto;
+		}
+	}
+}
