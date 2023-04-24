@@ -11,6 +11,9 @@ import '../../../styles/components/paginaDonaciones1/_content-donacion.scss';
 
 
 const Donar = () => {
+
+	
+
   return (
     <div className="contentDonacion">
       <h2
@@ -109,6 +112,7 @@ const Donar = () => {
       <ButtonSiguiente />
     </div>
   );
+
 };
 
 export default Donar;
