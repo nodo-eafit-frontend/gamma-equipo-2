@@ -1,8 +1,7 @@
 import React from 'react'
 import imgTransferenciaQR from '../../assets/como-donar/transferenciaqr.jpg';
 import Image from 'next/image';
-import '../../styles/components/como-donar/comoDonar.scss';
-
+import "../../styles/components/como-donar/comoDonar.scss";
 export default function ArticuloTransferencia() {
     return (
         <article id="article3">
