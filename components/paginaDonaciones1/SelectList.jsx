@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/components/paginaDonaciones1/_select-list.scss';
 
 export function SelectList(props) {
   let options = [];
