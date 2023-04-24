@@ -32,7 +32,7 @@ export default function Form ({useRegistro}) {
       </div>
       <div className={form__group}>
         <label htmlFor="numero-documento">Número de documento</label>
-        <input className={form__input} id="numero-documento" type="text" />
+        <input id="numero-documento" type="text" className={form__input}/>
       </div>
       <div className={styles["form__group--buttons"]}>
         <button className={`${form__button} ${styles["form__button--primary"]}`}>

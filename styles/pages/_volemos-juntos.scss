@@ -1,0 +1,123 @@
+@import '../style.scss';
+
+.volemosJuntos {
+	& p,
+	& span {
+		text-align: center;
+	}
+
+	&__banner {
+		width: 100%;
+		height: 150px;
+	}
+
+	&__banner img {
+		width: 100%;
+		height: 100%;
+		object-fit: scale-down;
+	}
+
+	&__description {
+		max-width: 600px;
+		padding: 10px;
+		margin: 0 auto;
+		padding: 30px 10px;
+	}
+
+	&__title {
+		text-align: center;
+		font-size: $font-size-l;
+		font-weight: 800;
+	}
+
+	&__propuesta {
+		color: $light-color;
+		background-color: $dark-color;
+		text-align: center;
+		padding: 50px 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&__propuesta p {
+		text-align: center;
+	}
+
+	&__opciones {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&__opcion {
+		text-align: center;
+		padding: 10px;
+		border: 2px solid $primary-color;
+		border-radius: 15px;
+		min-width: 200px;
+		max-width: 450px;
+	}
+
+	&__opcion > span {
+		font-size: $font-size-xs;
+		color: rgba($color: $light-color, $alpha: 0.5);
+	}
+
+	&__opcion > p {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	&__grupo {
+		color: $primary-color;
+		font-weight: 500;
+	}
+
+	&__unSoloPago {
+		max-width: 300px;
+		padding: 10px 15px;
+		background-color: $secundary-color;
+	}
+
+	&__otorgar {
+		max-width: 450px;
+	}
+
+	&__contacto {
+		padding: 30px 10px;
+		background-color: $secundary-color;
+	}
+
+	&__contacto svg {
+		display: block;
+		width: 20px;
+	}
+
+	&__contacto div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
+	}
+}
+
+@media (min-width: 768px) {
+	.volemosJuntos {
+		&__banner {
+			height: 300px;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.volemosJuntos {
+		&__banner {
+			height: 450px;
+		}
+	}
+}

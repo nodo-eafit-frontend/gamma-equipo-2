@@ -4,9 +4,9 @@ $cols	: 12;
 $gap	: 0px;
 
 .container {
+	background-color: $light-color;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	background-color: $light-color;
 	width: 100%;
 	justify-content: space-between;
 	margin: 0 auto;
