@@ -13,7 +13,7 @@ const Beneficios = () => {
       <section>
         <h1 className='col__title'>Beneficios</h1>
         <div className='container'>
-            <p>
+            <p className='col__encabezado'>
             <br />Participar del Voluntariado EAFIT te permite fortalecer cualidades y competencias entre las cuales 
                 se destacan la empatía, habilidades comunicativas, liderazgo, trabajo en equipo y 
                 creatividad e innovación, también canalizar tu vocación y deseo desinteresado de contribuir a la 
