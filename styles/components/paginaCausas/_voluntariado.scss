@@ -1,0 +1,94 @@
+@import '../../style.scss';
+
+.container {
+	background-color: $light-color;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	width: 100%;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding-bottom: 2rem;
+	padding-left: 10rem;
+	padding-right: 15rem;
+
+} 
+
+.col{
+	width: 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 0 0;
+	
+
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	display: grid;
+	text-align: justify;
+
+	&__image {
+		width: 80%;
+		max-width: 300px;
+        height: 200px;
+		margin: auto;
+		border-radius: 5px;
+		object-fit: contain;
+	}
+    &__image-2 {
+        padding: 0 auto;
+		width: 80%;
+		max-width: 500px;
+        height: 300px;
+		margin: auto;
+		border-radius: 15px;
+		object-fit: contain;
+	}
+
+	&__title{
+		position: initial;
+		//transform: translate(56%, -40%);
+		text-align: center;
+		font-size: $font-size-xl;
+		font-weight: bold;
+		width: 80%;
+		max-width: 800px;
+		margin: 0 auto;
+		background-color: $primary-color;
+		color: $dark-color;
+		border-radius: 5px;
+
+	}
+
+    &__text{
+        position: relative;
+		transform: translate(10%, -10%);
+		font-size: $font-size-lr;
+		font-weight: bold;
+		width: 80%;
+		//max-width: 800px;
+		margin: 0 auto;
+		//background-color: $primary-color;
+		color: $dark-color;
+		//border-radius: 5px;
+    }
+	&__subtitle{
+		text-align: center;
+		font-size: $font-size-m;
+		font-weight: 570;
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+		color: $dark-color;
+	}
+
+	&__sub{
+		position: relative;
+		transform: translate(-50%, 0%);
+		font-size: $font-size-s;
+		font-weight: 600;
+		width: 50%;
+		max-width: 600px;
+		margin: 0 auto;
+		color: $primary-color;
+	}
+}

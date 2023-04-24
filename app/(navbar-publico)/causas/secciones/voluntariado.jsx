@@ -4,6 +4,7 @@ import Image from 'next/image';
 import imgVoluntariado from '../../../../assets/paginaCausas/4Inspiracion-voluntariado.jpg'
 import ButtonVoluntariado from '@/components/paginaCausas/ButtonVoluntariado';
 import AliadosVolunt from '@/components/paginaCausas/AliadosVolunt';
+import ButtonConoceMas from '@/components/paginaCausas/buttonConoce';
 import '../../../../styles/components/paginaCausas/_flexbox.scss';
 
 const Voluntariado = () => {
@@ -31,10 +32,10 @@ const Voluntariado = () => {
                             que inspira a la comunidad eafitense y sus allegados a vincularse con iniciativas
                             sociales, académicas, comunitarias, culturales y para la filantropía, 
                             permitiendo asumir responsabilidad y rol en la sociedad y/o al interior de la Universidad 
-                            a través de la contribución eficaz de tiempo y conocimiento.
-                        </p>
-                    </div>
-                                        
+                            a través de la contribución eficaz de tiempo y conocimiento.<br/><br/>
+                            <ButtonConoceMas/>
+                        </p> 
+                    </div>                                        
                 </div>
             </div>
             <hr />
