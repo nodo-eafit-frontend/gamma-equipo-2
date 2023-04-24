@@ -10,13 +10,9 @@ import { InputEmail } from "@/components/paginaDonaciones1/InputEmail";
 
 
 const Donar = () => {
-<<<<<<< HEAD
-	return (
-	<div>
-		
-	</div>
-	);
-=======
+
+	
+
   return (
     <div className="contentDonacion">
       <h2
@@ -115,7 +111,7 @@ const Donar = () => {
       <ButtonSiguiente />
     </div>
   );
->>>>>>> a0dd1f7494433c244cda25046ba62c31431e029d
+
 };
 
 export default Donar;
