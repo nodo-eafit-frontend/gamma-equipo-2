@@ -11,34 +11,33 @@ const TransformacionH = () => {
     return (
 		<>
 			<div className='container'>
-                    <div className='col'>
-                        <Image
-							src={imgTransf}
-							alt="transformacion humanistica"
-							className="header-causas__image"
-							quality={100}
-						/>
-                        <h1 className='col__title'>
-                            Transformación Humanística
+                <div className='col'>
+                    <Image
+                        src={imgTransf}
+                        alt="transformacion humanistica"
+                        className="header-causas__image"
+                        quality={100}
+                    />
+                    <h1 className='col__title'>
+                        Transformación Humanista
 
-                        </h1>
-                    </div>
+                    </h1>
+                </div>
 
-                    <div className='col'>
-                        <p>
-                            <br />EAFIT es una Universidad que a lo largo de su historia ha promovido el desarrollo del arte, 
-                            el deporte y la cultura como parte fundamental de la institución, adicionalmente en más de 
-                            medio siglo de existencia, la Universidad se ha preocupado por ofrecer la mejor infraestructura 
-                            para el desarrollo de las actividades universitarias, en un ambiente que favorece el bienestar 
-                            de sus estudiantes, empleados, docentes y visitantes.<br /> La formación no se da solo en las aulas, 
-                            también en diferentes espacios deportivos, artísticos y culturales. Con tus aportes a esta causa 
-                            contribuyes a la creación de un ambiente que favorece el aprendizaje integral de su comunidad.
-                        </p>
-                    </div>
-                                                      
-
+                <div className='col'>
+                    <p>
+                        <br />EAFIT es una Universidad que a lo largo de su historia ha promovido el desarrollo del arte, 
+                        el deporte y la cultura como parte fundamental de la institución, adicionalmente en más de 
+                        medio siglo de existencia, la Universidad se ha preocupado por ofrecer la mejor infraestructura 
+                        para el desarrollo de las actividades universitarias, en un ambiente que favorece el bienestar 
+                        de sus estudiantes, empleados, docentes y visitantes.<br /> La formación no se da solo en las aulas, 
+                        también en diferentes espacios deportivos, artísticos y culturales. Con tus aportes a esta causa 
+                        contribuyes a la creación de un ambiente que favorece el aprendizaje integral de su comunidad.
+                    </p>
+                </div>
+                                                                          
             </div>
-            <h1 className='col__subtitle'>Conoce los fondos a los que puedes aportar</h1>
+                <h1 className='col__subtitle'>Conoce los fondos a los que puedes aportar</h1>
             <div className='container'>
                 <div className='col'>
                     <Image
@@ -74,6 +73,16 @@ const TransformacionH = () => {
                         EAFIT en diferentes competencias y eventos a nivel representativo de la Institución.
                         </p>
                     </div>
+                </div>
+            </section>
+            <section>
+                <div className='container'>
+                    <p>
+                    Gracias a tus aportes a nuestro fondo de becas, lograremos que muchos más estudiantes puedan acceder 
+                    a una institución de alta calidad que ayudará a que la vida de estos jóvenes se transforme para siempre 
+                    logrando así una sociedad más equitativa.
+                    </p>
+
                 </div>
             </section>
 
