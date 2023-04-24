@@ -16,7 +16,7 @@ const Testimonios = () => (
 
 
   import React from "react";
-  import CardGrid from "../../../components/paginaCausas/CardGrid";
+  import CardGrid from "../../../../components/paginaCausas/CardGrid";
   import infoTestimonios from "@/data/causas/videos";
   
   const Videos = () => {

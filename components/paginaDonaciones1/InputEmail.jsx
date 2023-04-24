@@ -1,4 +1,5 @@
 import React from "react";
+import '../../styles/components/paginaDonaciones1/_input-email.scss';
 
 export const InputEmail = (props) => {
   return (

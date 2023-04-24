@@ -1,4 +1,5 @@
 import React from "react";
+import '../../styles/components/paginaDonaciones1/_input-text.scss';
 
 export const InputText = (props) => {
     return (<div>

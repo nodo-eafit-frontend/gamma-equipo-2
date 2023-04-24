@@ -1,9 +1,10 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import imgVoluntariado from '../../../assets/paginaCausas/4Inspiracion-voluntariado.jpg'
+import imgVoluntariado from '../../../../assets/paginaCausas/4Inspiracion-voluntariado.jpg'
 import ButtonVoluntariado from '@/components/paginaCausas/ButtonVoluntariado';
-import '../../../styles/components/paginaCausas/_flexbox.scss';
+import AliadosVolunt from '@/components/paginaCausas/AliadosVolunt';
+import '../../../../styles/components/paginaCausas/_flexbox.scss';
 
 const Voluntariado = () => {
     
@@ -36,10 +37,12 @@ const Voluntariado = () => {
                                         
                 </div>
             </div>
+            <hr />
             <h1 className='col__subtitle'>
-                        ¡Haz parte del voluntariado!<br/>
-                        <ButtonVoluntariado/>
-                </h1>
+                ¡Haz parte del voluntariado!<br/>
+                <ButtonVoluntariado/>
+            </h1>
+            <AliadosVolunt/>
                     
 		</>
 	);

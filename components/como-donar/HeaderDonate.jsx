@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../styles/components/como-donar/comoDonar.scss';
 
 export default function HeaderDonate () {
   return (

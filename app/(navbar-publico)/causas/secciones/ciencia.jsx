@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import imgCiencia from '../../../assets/paginaCausas/2CienciaTecnologiaEInnovacion.jpg';
-import '../../../styles/components/paginaCausas/_flexbox.scss';
+import imgCiencia from '../../../../assets/paginaCausas/2CienciaTecnologiaEInnovacion.jpg';
+import '../../../../styles/components/paginaCausas/_flexbox.scss';
 
 const CienciaTec = () => {
     

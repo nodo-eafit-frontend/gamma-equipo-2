@@ -1,4 +1,5 @@
 import React from "react";
+import '../../styles/components/paginaDonaciones1/_input-date.scss';
 
 export const InputDate = (props) => {
   return (
