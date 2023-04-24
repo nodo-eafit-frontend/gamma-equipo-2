@@ -1,4 +1,4 @@
-@import "../style.scss";
+@import '../style.scss';
 
 .navbar-micrositio {
 	width: 100%;
@@ -28,6 +28,10 @@
 
 	&__subtexto1 {
 		width: 100%;
+		font-size: $font-size-l;
+		font-weight: 600;
+		text-align: center;
+		margin: 0 auto;
 	}
 
 	&__subtexto2 {
