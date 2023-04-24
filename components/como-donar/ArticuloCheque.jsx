@@ -1,6 +1,7 @@
 import React from 'react'
 import imgCheque from '../../assets/como-donar/chequeodonacionespecie.png';
 import Image from 'next/image';
+import "../../styles/components/como-donar/comoDonar.scss";
 
 export default function ArticuloCheque() {
     return (

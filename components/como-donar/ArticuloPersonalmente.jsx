@@ -1,7 +1,7 @@
 import React from 'react'
 import imgPersonalmente from '../../assets/como-donar/personalmente.png';
 import Image from 'next/image';
-
+import "../../styles/components/como-donar/comoDonar.scss";
 export default function ArticuloPersonalmente() {
     return (
         <article id="article5">

@@ -1,7 +1,7 @@
 import React from 'react'
 import imgTiempo from '../../assets/como-donar/tiempoytalento.png';
 import Image from 'next/image';
-
+import "../../styles/components/como-donar/comoDonar.scss";
 export default function ArticuloTiempoTalento() {
     return (
         <article id="article7">

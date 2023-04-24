@@ -1,7 +1,7 @@
 import React from 'react'
 import imgNomina from '../../assets/como-donar/deduccionnominaempleados.png';
 import Image from 'next/image';
-
+import "../../styles/components/como-donar/comoDonar.scss";
 export default function ArticuloDeduccion() {
     return (
         <article id="article6">
