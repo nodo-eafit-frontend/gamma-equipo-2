@@ -1,9 +1,9 @@
 import HeaderCausas from '@/components/paginaCausas/header';
-import EquidadSocial from './equidad';
-import CienciaTec from './ciencia';
-import TransformacionH from './transformacion';
-import Voluntariado from './voluntariado';
-import Videos from './testimonios';
+import EquidadSocial from './secciones/equidad';
+import CienciaTec from './secciones/ciencia';
+import TransformacionH from './secciones/transformacion';
+import Voluntariado from './secciones/voluntariado';
+import Videos from './secciones/testimonios';
 import '../../../styles/components/paginaCausas/_bloque.scss';
 
 export default function Causas() {

@@ -49,4 +49,13 @@
     font-size: $font-size-xs;
     text-align: center;
   }
+
+  .card__subtext{
+    font-size: $font-size-lr;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: $dark-color;
+  }
   

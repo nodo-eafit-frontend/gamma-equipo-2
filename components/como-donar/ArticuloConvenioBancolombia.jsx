@@ -1,6 +1,7 @@
 import React from 'react'
 import imgBancolombia from '../../assets/como-donar/conveniobancolombia.png';
 import Image from 'next/image';
+import '../../styles/components/como-donar/comoDonar.scss';
 
 export default function ArticuloConvenioBancolombia() {
     return (

@@ -1,4 +1,5 @@
 import React from "react";
+import '../../styles/components/paginaDonaciones1/_input-number.scss';
 
 export const InputNumber = (props) => {
     return( <div>

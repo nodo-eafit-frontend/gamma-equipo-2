@@ -16,7 +16,7 @@ const Testimonios = () => (
 
 
   import React from "react";
-  import CardGrid from "../../../components/paginaCausas/CardGrid";
+  import CardGrid from "../../../../components/paginaCausas/CardGrid";
   import infoTestimonios from "@/data/causas/videos";
   
   const Videos = () => {
@@ -24,7 +24,7 @@ const Testimonios = () => (
   
     return (
       <div>
-        <h1 className="col__subtitle">Testimonios<br/></h1>
+        <h1 className="card__subtext">Testimonios<br/></h1>
         <CardGrid videos={videos} />
       </div>
     );

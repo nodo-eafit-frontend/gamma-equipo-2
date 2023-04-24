@@ -68,7 +68,7 @@ const infoTestimonios = [
   {
     id: 12,
     videoId: '0BVWd8EWXtk',
-    title: 'Transformación Humanística',
+    title: 'Transformación Humanista',
     description: 'Edificio de Ciencias - Universidad EAFIT - Certificación LEED'
   },
     

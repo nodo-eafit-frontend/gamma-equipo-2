@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import imgEquidad from '../../../assets/paginaCausas/1equidadSocialEInclusion.jpg'
-import imgBecas from '../../../assets/paginaCausas/5FondoDeBecas.png'
-import '../../../styles/components/paginaCausas/_flexbox.scss';
+import imgEquidad from '../../../../assets/paginaCausas/1equidadSocialEInclusion.jpg';
+import imgBecas from '../../../../assets/paginaCausas/5FondoDeBecas.png';
+import '../../../../styles/components/paginaCausas/_flexbox.scss';
 
 const EquidadSocial = () => {    
     return (

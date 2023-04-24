@@ -1,3 +1,5 @@
+@import '../../style.scss';
+
 body {
     background-color: $light-color;
     font-family: sans-serif;
@@ -31,6 +33,8 @@ content {
 
 h1 {
     text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
 }
 
 h2 {

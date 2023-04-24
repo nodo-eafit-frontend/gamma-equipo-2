@@ -1,0 +1,68 @@
+@import '../style.scss';
+
+.creadoresPrincipios {
+	&__carousel {
+		width: 100%;
+		height: auto;
+	}
+
+	&__card {
+		width: 100%;
+		height: 100px;
+		max-height: 320px;
+		position: relative;
+	}
+
+	&__banner {
+		width: 100%;
+		height: auto;
+		object-fit: scale-down;
+		//overflow: 'hidden';
+	}
+
+	//texto
+	&__text {
+		padding: 20px 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	& p {
+		font-size: $font-size-s;
+		text-align: center;
+		padding: 10px;
+		font-weight: 400;
+		max-width: 350px;
+	}
+
+	&__imgFondoBeca {
+		width: 250px;
+	}
+}
+
+@media (min-width: 768px) {
+	.creadoresPrincipios {
+		&__card {
+			height: 300px;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.creadoresPrincipios {
+		&__text {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			flex-wrap: wrap;
+			flex-direction: column;
+			gap: 30px;
+		}
+		& p {
+			max-width: 450px;
+		}
+	}
+}

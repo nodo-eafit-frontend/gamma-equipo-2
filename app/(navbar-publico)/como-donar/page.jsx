@@ -7,6 +7,7 @@ import ArticuloPersonalmente from "@/components/como-donar/ArticuloPersonalmente
 import ArticuloTiempoTalento from "@/components/como-donar/ArticuloTiempoTalento";
 import ArticuloTransferencia from "@/components/como-donar/ArticuloTransferencia";
 import HeaderDonate from "@/components/como-donar/HeaderDonate";
+import '../../../styles/components/como-donar/comoDonar.scss';
 
 const DonateContainer = () => {
     return (
