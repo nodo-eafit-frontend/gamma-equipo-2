@@ -10,7 +10,7 @@ const Botones = () => {
             Realizar donación
         </button>
         <button className={`${grupobotones__boton} ${styles["grupobotones__boton--secundario"]}`}>
-          <Link href="/">
+          <Link href="">
             Regresar
           </Link>
         </button>

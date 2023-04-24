@@ -19,6 +19,7 @@
   &__img {
     display: block;
     width: auto;
+    width: 550px;
     border-radius: 10px;
     margin: 20px;
 
@@ -27,7 +28,7 @@
 
   &__infodonaciones {
     font-family: $font-primary;
-    font-size: $font-size-l;
+    font-size: $font-size-m;
     display: flex;
     background-color: $dark-color;
     color:#fff;
@@ -48,10 +49,10 @@
 
   &__input {
     display: inline;
-    width: 50%;
+    width: 30%;
     margin: 0.5rem 0;
     font-size: $font-size-sr;
-    background-color: #7aacb1;
+    background-color: $secundary-color;
     padding: 5px;
     border-radius: 10px;
     text-align: center;
